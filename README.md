@@ -37,6 +37,8 @@ ZvitOkPlus - додаткові можливості до програми ZvitO
 
 #### Сертифікат не знайдено ####
 Скачати кореневі сертифікати з сайту [https://czo.gov.ua/en/certificates](https://czo.gov.ua/download/certificates/CACertificates.p7b)  
-Даний файл розмістив в папку (неропаковуємо) - C:\ZvitOK\Certificates\CACertificates.p7b  
+Даний файл розмістити в папку програми (неропаковуємо) - C:\ZvitOK\Certificates\CACertificates.p7b  
 
 
+### Помилка стуктури перед імпортом звітів ###
+Перед імпортом файлів зніміть відмітку "Перевіряти на помилки".
