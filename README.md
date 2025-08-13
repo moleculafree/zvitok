@@ -4,12 +4,12 @@ ZvitOKPlus - додаткові можливості до програми ZvitO
 
 ### Встановлення ###
 
-Якщо вам потрібно лише **оновити/встановити ZvitOkPlus** вибирайте для завантаження файл ZvitOkPlusSetup крайньої версії [ZvitOkPlusSetup](https://github.com/moleculafree/zvitok/releases/latest)
+Якщо вам потрібно лише **оновити/встановити ZvitOkPlus** вибирайте для завантаження файл [ZvitOkPlusSetup](https://github.com/moleculafree/zvitok/releases/latest)
 Після скачування і запуску архіву вкажіть шлях C:\ZvitOK для розпакування всіх файлів в папку програми (або в ту в якій знаходиться програма ZvitOK).
 Для роботи зі звітами запускайте файл ZvitOkPlus.exe
 
 
-Для **нового встановлення** вибирайте для завантаження ZvitOk_ZvitOkPlusSetup** крайньої версії [ZvitOk_ZvitOkPlusSetup](https://github.com/moleculafree/zvitok/releases/latest)
+Для **нового встановлення** вибирайте для завантаження файл [ZvitOk_ZvitOkPlusSetup](https://github.com/moleculafree/zvitok/releases/latest)
 Після скачування і запуску архіву вкажіть шлях C:\ZvitOk для розпакування всіх файлів в папку програми за замовчуванням.
 Для роботи зі звітами запускайте файл ZvitOkPlus.exe
 
