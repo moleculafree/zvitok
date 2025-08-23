@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" exclude-result-prefixes="fo">
+   <xsl:output method="xml" version="1.0" omit-xml-declaration="no" indent="yes"/>
+       <xsl:template match="/">
+         <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+            <fo:layout-master-set>
+               <fo:simple-page-master margin-right="0.5cm" margin-left="2cm" margin-bottom="1cm" margin-top="0.5cm" page-width="21cm" page-height="29.7cm" master-name="first">
+                   <fo:region-body margin-top="0.5cm" margin-bottom="0.5cm"/>
+               </fo:simple-page-master>
+            </fo:layout-master-set>
+            <fo:page-sequence font-family="TimesNewRoman" master-reference="first">
+               <fo:flow flow-name="xsl-region-body">
+                   <fo:block text-align="center" font-size="14pt" font-weight="bold"><xsl:value-of select="//TITLE"/></fo:block>
+                   <fo:block>&#160;</fo:block>
+                   <xsl:for-each select="//ROW">
+                       <fo:block font-size="12pt"> <xsl:value-of select="."/> </fo:block>
+                   </xsl:for-each>
+               </fo:flow>
+           </fo:page-sequence>
+       </fo:root>
+    </xsl:template>
+</xsl:stylesheet>
