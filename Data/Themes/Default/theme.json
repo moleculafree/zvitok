@@ -1,6 +1,6 @@
 {
+  "title": "Класична",
   "mainform": {
-    "title": "Класична",
     "height": "500",
     "width": "442",
     "labels": {
@@ -223,6 +223,120 @@
         },
         "tip": "Меню програми",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKSIZE"
+      }
+    }
+  },
+  "importform": {
+    "height": "330",
+    "width": "615",
+    "groups": {
+      "grp1": {
+        "width": "585",
+        "height": "265",
+        "left": "15",
+        "top": "10",
+        "text": "Вибір звітів: ",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKBOTTOM"
+      }
+    },
+    "buttons": {
+      "zvitimport": {
+        "width": "120",
+        "height": "25",
+        "left": "210",
+        "top": "288",
+        "text": "Імпортувати",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKBOTTOM+GUI_DOCKSIZE",
+        "hotkey": "{F5}"
+      },
+      "zvitview": {
+        "width": "120",
+        "height": "25",
+        "left": "340",
+        "top": "288",
+        "text": "Переглянути",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKBOTTOM+GUI_DOCKSIZE",
+        "hotkey": "{F3}"
+      },
+      "zvitcancel": {
+        "width": "120",
+        "height": "25",
+        "left": "470",
+        "top": "288",
+        "text": "Відміна",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKBOTTOM+GUI_DOCKSIZE",
+        "hotkey": "{ESC}"
+      },
+      "quick1": {
+        "width": "20",
+        "height": "20",
+        "left": "133",
+        "top": "8",
+        "tip": "Перейти до папки",
+        "onresize": "G1UI_DOCKLEFT+GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "icon": {
+          "name": "icon16",
+          "size": "16"
+        }
+      },
+      "quick2": {
+        "width": "20",
+        "height": "20",
+        "left": "158",
+        "top": "8",
+        "tip": "Перейти до папки",
+        "onresize": "G1UI_DOCKLEFT+GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "icon": {
+          "name": "icon16",
+          "size": "16"
+        }
+      },
+      "quick3": {
+        "width": "20",
+        "height": "20",
+        "left": "183",
+        "top": "8",
+        "tip": "Перейти до папки",
+        "onresize": "G1UI_DOCKLEFT+GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "icon": {
+          "name": "icon16",
+          "size": "16"
+        }
+      }
+    },
+    "checkbox": {
+      "zvitdelete": {
+        "left": "25",
+        "top": "290",
+        "text": "Видаляти імпортовані звіти",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKSIZE"
+      },
+      "zvitcheck": {
+        "left": "220",
+        "top": "8",
+        "text": "Перевіряти на помилки",
+        "tip": "Перевіряти/вимкнути\nперевірку на помилки",
+        "onresize": "GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKSIZE"
+      }
+    },
+    "tree": {
+      "treePath": {
+        "width": "180",
+        "height": "233",
+        "left": "24",
+        "top": "30",
+        "onresize": "GUI_DOCKLEFT+G1UI_DOCKRIGHT+GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKBOTTOM",
+        "style": "TVS_HASBUTTONS+TVS_HASLINES+TVS_SHOWSELAWAYS+TVS_LINESATROOT+TVS_DISABLEDRAGDROP+WS_TABSTOP",
+        "styleex": "WS_EX_CLIENTEDGE"
+      },
+      "treeZvit": {
+        "width": "370",
+        "height": "233",
+        "left": "220",
+        "top": "30",
+        "onresize": "G1UI_DOCKRIGHT+G1UI_DOCKLEFT+GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKBOTTOM",
+        "style": "TVS_HASBUTTONS+TVS_HASLINES+TVS_CHECKBOXES+TVS_SHOWSELAWAYS+WS_TABSTOP",
+        "styleex": "WS_EX_CLIENTEDGE"
       }
     }
   },
