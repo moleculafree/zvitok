@@ -1,1 +1,297 @@
-
+{
+  "mainform": {
+    "title": "Класична",
+    "height": "500",
+    "width": "442",
+    "labels": {
+      "filterLabel1": {
+        "left": "16",
+        "top": "87",
+        "text": "Імпортовані/надіслані протягом ",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
+      },
+      "filterLabel2": {
+        "left": "270",
+        "top": "87",
+        "text": "до ",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "infoLabel1": {
+        "left": "60",
+        "top": "480",
+        "width": "350",
+        "style": "SS_CENTER",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKHEIGHT"
+      },
+      "infoLabel2": {
+        "left": "60",
+        "top": "496",
+        "width": "350",
+        "style": "SS_CENTER",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKHEIGHT"
+      }
+    },
+    "groups": {
+      "grp1": {
+        "width": "425",
+        "height": "50",
+        "left": "8",
+        "top": "8",
+        "text": "Організація/ФОП: ",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP"
+      },
+      "grp2": {
+        "width": "425",
+        "height": "50",
+        "left": "8",
+        "top": "64",
+        "text": "Фільтр для звітів: ",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
+      },
+      "grp3": {
+        "width": "425",
+        "height": "351",
+        "left": "8",
+        "top": "120",
+        "text": "Звіти та квитанції: ",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKBOTTOM"
+      }
+    },
+    "combo": {
+      "org": {
+        "width": "300",
+        "height": "400",
+        "left": "17",
+        "top": "25",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "WS_SCROLL+CBS_DROPDOWNLIST+CBS_AUTOHSCROLL+CBS_SORT+WS_CHILD+CBS_OWNERDRAWVARIABLE+CBS_HASSTRINGS"
+      },
+      "period": {
+        "width": "70",
+        "height": "25",
+        "left": "186",
+        "top": "83",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "style": "CBS_DROPDOWNLIST+CBS_AUTOHSCROLL"
+      }
+    },
+    "buttons": {
+      "orgfind": {
+        "width": "20",
+        "height": "20",
+        "left": "112",
+        "top": "4",
+        "icon": {
+          "name": "icon1",
+          "size": "16"
+        },
+        "tip": "Пошук профілю у списку",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "hotkey": "{F2}"
+      },
+      "orgadd": {
+        "width": "32",
+        "height": "32",
+        "left": "322",
+        "top": "20",
+        "icon": {
+          "name": "icon2",
+          "size": "32"
+        },
+        "tip": "Додати організацію\n(фізичну особу)",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "hotkey": "^n"
+      },
+      "orgedit": {
+        "width": "32",
+        "height": "32",
+        "left": "357",
+        "top": "20",
+        "icon": {
+          "name": "icon3",
+          "size": "32"
+        },
+        "tip": "Змінити набір ЕЦП\nорганізації (фізичної особи)",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "orgdel": {
+        "width": "32",
+        "height": "32",
+        "left": "392",
+        "top": "20",
+        "icon": {
+          "name": "icon4",
+          "size": "32"
+        },
+        "tip": "Видалити дані по\nорганізації (фізичній особі)",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "refresh": {
+        "width": "32",
+        "height": "32",
+        "left": "392",
+        "top": "76",
+        "icon": {
+          "name": "icon5",
+          "size": "32"
+        },
+        "tip": "Пошук звітів за\nвстановленим фільтром",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "hotkey": "{F5}"
+      },
+      "xlmadd": {
+        "width": "36",
+        "height": "35",
+        "left": "16",
+        "top": "136",
+        "icon": {
+          "name": "icon6",
+          "size": "32"
+        },
+        "tip": "Додати пакет документів",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "xlmexport": {
+        "width": "36",
+        "height": "35",
+        "left": "54",
+        "top": "136",
+        "icon": {
+          "name": "icon7",
+          "size": "32"
+        },
+        "tip": "Експорт пакету в форматі XML",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "xlmdel": {
+        "width": "36",
+        "height": "35",
+        "left": "92",
+        "top": "136",
+        "icon": {
+          "name": "icon8",
+          "size": "32"
+        },
+        "tip": "Видалити пакет документів",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "xlmsend": {
+        "width": "36",
+        "height": "35",
+        "left": "350",
+        "top": "136",
+        "icon": {
+          "name": "icon9",
+          "size": "32"
+        },
+        "tip": "Надіслати пакет документів",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "xlmreceive": {
+        "width": "36",
+        "height": "35",
+        "left": "388",
+        "top": "136",
+        "icon": {
+          "name": "icon10",
+          "size": "32"
+        },
+        "tip": "Отримати квитанції",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "xlmprint": {
+        "width": "36",
+        "height": "35",
+        "left": "200",
+        "top": "136",
+        "icon": {
+          "name": "icon11",
+          "size": "32"
+        },
+        "tip": "Перегляд/друк документів",
+        "onresize": "GUI_DOCKHCENTER+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "hotkey": "{F3}"
+      },
+      "settings": {
+        "width": "36",
+        "height": "35",
+        "left": "16",
+        "top": "480",
+        "icon": {
+          "name": "icon12",
+          "size": "32"
+        },
+        "tip": "Меню програми",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKSIZE"
+      }
+    }
+  },
+  "icons": {
+    "icon1": {
+      "file": "Find.ico"
+    },
+    "icon2": {
+      "file": "Org+.ico"
+    },
+    "icon3": {
+      "file": "OrgEdit.ico"
+    },
+    "icon4": {
+      "file": "Org-.ico"
+    },
+    "icon5": {
+      "file": "Refresh.ico"
+    },
+    "icon6": {
+      "file": "XMLAdd.ico"
+    },
+    "icon7": {
+      "file": "XMLExport.ico"
+    },
+    "icon8": {
+      "file": "XMLDel.ico"
+    },
+    "icon9": {
+      "file": "XMLSend.ico"
+    },
+    "icon10": {
+      "file": "XMLReceive.ico"
+    },
+    "icon11": {
+      "file": "XMLPrint.ico"
+    },
+    "icon12": {
+      "file": "Settings.ico"
+    },
+    "icon13": {
+      "file": "ListOff.ico"
+    },
+    "icon14": {
+      "file": "List+.ico"
+    },
+    "icon15": {
+      "file": "List-.ico"
+    },
+    "icon16": {
+      "file": "FolderDocs.ico"
+    },
+    "icon17": {
+      "file": "FolderOpen.ico"
+    },
+    "icon18": {
+      "file": "TextField_Save.ico"
+    },
+    "icon19": {
+      "file": "TextField_Edit.ico"
+    },
+    "icon20": {
+      "file": "Key-.ico"
+    },
+    "icon21": {
+      "file": "Key+.ico"
+    },
+    "icon122": {
+      "file": "KeyOff.ico"
+    }
+  }
+}
