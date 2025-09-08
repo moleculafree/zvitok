@@ -1,5 +1,314 @@
 {
   "title": "Класична",
+  "settingsform": {
+    "height": "520",
+    "width": "355",
+    "tabs": {
+        "tab": {
+            "left": "15",
+            "top": "15",
+            "width": "492",
+            "height": "320",
+            "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKBOTTOM"
+        }
+    },
+    "graphic": {
+        "gra1": {
+            "left": "25",
+            "top": "50",
+            "width": "470",
+            "height": "117",
+            "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKBOTTOM"
+        }
+    },
+    "groups": {
+      "grp1": {
+        "left": "35",
+        "top": "65",
+        "width": "450",
+        "height": "80",
+        "text": "Налаштування параметрів проксі серверу",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
+      },
+      "grp2": {
+        "left": "35",
+        "top": "160",
+        "width": "450",
+        "height": "80",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
+      },
+      "grp3": {
+        "left": "35",
+        "top": "63",
+        "width": "450",
+        "height": "43",
+        "text": "Період (днів) до завершення терміну дії",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
+      },
+      "grp4": {
+        "left": "35",
+        "top": "110",
+        "width": "230",
+        "height": "55",
+        "text": "Сповіщення про термін дії",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKWIDTH"
+      },
+      "grp5": {
+        "left": "275",
+        "top": "110",
+        "width": "210",
+        "height": "55",
+        "text": "Візуальне відображення терміну дії",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
+      }
+    },
+    "checkbox": {
+      "useproxy": {
+        "left": "35",
+        "top": "40",
+        "text": "Використовувати проксі сервер",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "proxyauth": {
+        "left": "45",
+        "top": "157",
+        "text": "Аутентифікація на проксі сервері",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "checkecp": {
+        "left": "35",
+        "top": "40",
+        "text": "Контроль терміну дії ЕЦП",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "messending": {
+        "left": "45",
+        "top": "122",
+        "text": "Нагадування про завершення терміну",
+        "tip": "Видавати повідомлення про завершення терміну дії \nв межах встановленого періоду контролю",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "messended": {
+        "left": "45",
+        "top": "140",
+        "text": "Термін дії завершено",
+        "tip": "Повідомлення про завершений термін дії ЕЦП\nвидається в будь-якому випадку",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "visualending": {
+        "left": "285",
+        "top": "123",
+        "width": "18",
+        "height": "18",
+        "tip": "Візуальне відображення завершення терміну дії\nв межах встановленого періоду контролю",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "visualended": {
+        "left": "285",
+        "top": "142",
+        "width": "18",
+        "height": "18",
+        "tip": "Візуальне відображення завершеного терміну дії ЕЦП",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "showending": {
+        "left": "35",
+        "top": "169",
+        "width": "-1",
+        "height": "18",
+        "text": "Термін дії в заданому періоді",
+        "tip": "Переглянути список профілів, термін дії ЕЦП яких\nвходить у встановлений період контролю терміну",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "showended": {
+        "left": "350",
+        "top": "168",
+        "width": "-1",
+        "height": "18",
+        "text": "Термін дії завершено",
+        "tip": "Переглянути список профілів\nіз завершеним терміном дії ЕЦП",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "UpdateZvitOkPlus": {
+        "left": "35",
+        "top": "40",
+        "text": "Перевіряти оновлення програми",
+        "tip": "Перевіряти наявність оновлення кожен раз при запуску програми",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "LockCertificates": {
+        "left": "35",
+        "top": "58",
+        "text": "Встановити атрибут 'Лише читання' для файла CACertificates.p7b",
+        "tip": "Наявність атрибуту перешкоджає перезапису файлу стороніми програами",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "InfoFromCAOnly": {
+        "left": "35",
+        "top": "76",
+        "text": "Зчитувати інформацію лише з сертифікатів КНЕДП",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "AddMissingFieldFromCustom": {
+        "left": "35",
+        "top": "94",
+        "text": "Підтягувати відсутні дані в профіль ЕЦП з INI файлу",
+        "tip": "Додавати необхідну для програми інформацію з файлу користувача",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "OptimizeListAcsk": {
+        "left": "35",
+        "top": "112",
+        "text": "Оптимізувати список КНЕДП для автоматичного визначення",
+        "tip": "Пришвидшує пошук сертифікатів при додавані підписів",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "CSPNameInESign": {
+        "left": "35",
+        "top": "130",
+        "text": "Відображати назву КНЕДП в описі ЕЦП",
+        "tip": "Показувати більше інформації про ЕПЦ",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "TreeZvitLongTitle": {
+        "left": "35",
+        "top": "148",
+        "text": "Відображати повну назву форми в переліку звітів",
+        "tip": "Показувати Код та Назву форми звіта замість Коду",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "TreeZvitTip": {
+        "left": "35",
+        "top": "166",
+        "text": "Відображати вспливаючу підказку в переліку звітів",
+        "tip": "Підказка містить назву файлу звіту",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "DeleteSentReportsNoReceipt": {
+        "left": "35",
+        "top": "184",
+        "text": "Видаляти надіслані звіти без квитанцій",
+        "tip": "Якщо звіт має статус 'Надісланий' та не має квітанції",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "MultiInstance": {
+        "left": "35",
+        "top": "202",
+        "text": "Запускати кілька копій програми",
+        "tip": "Якщо заборонено запуск кількох копій,\nпрограма автоматично перемикається на організацію,\nпередану в параметрах командного рядка.",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "AltReceiptName": {
+        "left": "35",
+        "top": "220",
+        "text": "Альтернативна назва файлу квитанцій",
+        "tip": "Назва файлу складається з назви файлу звіту + номер квітанції,\nінакше використовується номер форми",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      }
+    },
+    "labels": {
+      "label1": {
+        "left": "45",
+        "top": "90",
+        "text": "Протокол проксі:",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
+      },
+      "label2": {
+        "left": "170",
+        "top": "90",
+        "text": "Адреса проксі серверу:",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
+      },
+      "label3": {
+        "left": "420",
+        "top": "90",
+        "text": "Порт:",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
+      },
+      "label4": {
+        "left": "100",
+        "top": "185",
+        "text": "Ім'я користувача:",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
+      },
+      "label5": {
+        "left": "270",
+        "top": "185",
+        "text": "Пароль:",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
+      },
+      "label6": {
+        "left": "300",
+        "top": "125",
+        "width": "170",
+        "height": "14",
+        "text": " Термін дії ЕЦП завершується",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
+      },
+      "label7": {
+        "left": "300",
+        "top": "143",
+        "width": "170",
+        "height": "14",
+        "text": " Термін дії ЕЦП завершено",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
+      }
+    },
+    "combo": {
+      "proxyprotocol": {
+        "left": "45",
+        "top": "105",
+        "width": "90",
+        "height": "25",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "CBS_DROPDOWNLIST"
+      }
+    },
+    "buttons": {
+      "proxytest": {
+        "left": "90",
+        "top": "285",
+        "width": "150",
+        "height": "25",
+        "text": "Перевірка підключення",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKSIZE"
+      },
+      "proxysave": {
+        "left": "270",
+        "top": "285",
+        "width": "150",
+        "height": "25",
+        "text": "Зберегти налаштування",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKSIZE"
+      },                                                                        
+      "checkecpsave": {
+        "left": "345",
+        "top": "40",
+        "width": "140",
+        "height": "20",
+        "text": "Зберегти налаштування",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "FixSystem": {
+        "left": "35",
+        "top": "296",
+        "text": "Відновити систему",
+        "tip": "Повертає стан системних файлів програми до початкового стану",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKSIZE"
+      }
+    },
+    "listview": {
+        "checkecp": {
+            "left": "25",
+            "top": "187",
+            "width": "470",
+            "height": "140",
+            "onresize": "GUI_DOCKRIGHT+GUI_DOCKLEFT+GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKBOTTOM",
+            "style": "LVS_REPORT+LVS_SHOWSELALWAYS+LVS_NOSORTHEADER+WS_BORDER+L1VS_SINGLESEL",
+            "styleex": "LVS_EX_BORDERSELECT+LVS_EX_FULLROWSELECT+LVS_EX_GRIDLINES"
+        }
+    }
+  },
   "mainform": {
     "height": "500",
     "width": "442",
