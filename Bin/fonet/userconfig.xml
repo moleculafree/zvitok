@@ -1,0 +1,15 @@
+<Config>
+<Fonts>
+  <Font old="TimesNewRoman" new="Times New Roman" />
+  <Font old="ArialNarrow" new="Arial Narrow" />
+</Fonts>
+<Options>
+    <XmlFile></XmlFile>
+    <XsltFile></XsltFile>
+    <FoFile></FoFile>
+    <PdfFile></PdfFile>
+    <Convert>True</Convert>
+    <FontType>Embed</FontType>
+    <Kerning></Kerning>
+</Options>
+</Config>
