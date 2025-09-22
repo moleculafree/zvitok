@@ -1,25 +1,70 @@
 {
   "title": "Класична",
   "settingsform": {
-    "height": "520",
+    "height": "532",
     "width": "355",
     "tabs": {
-        "tab": {
-            "left": "15",
-            "top": "15",
-            "width": "492",
-            "height": "320",
-            "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKBOTTOM"
-        }
+      "tab": {
+        "left": "15",
+        "top": "15",
+        "width": "492",
+        "height": "320",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKBOTTOM"
+      }
     },
     "graphic": {
-        "gra1": {
-            "left": "25",
-            "top": "50",
-            "width": "470",
-            "height": "117",
-            "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKBOTTOM"
-        }
+      "gra1": {
+        "left": "25",
+        "top": "50",
+        "width": "470",
+        "height": "117",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKBOTTOM"
+      }
+    },
+    "inputs": {
+      "proxyhost": {
+        "left": "170",
+        "top": "105",
+        "width": "240",
+        "height": "21",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "ES_LEFT+ES_AUTOHSCROLL",
+        "tip": "Вказується IP адреса або назва DNS-ім'я серверу"
+      },
+      "proxyport": {
+        "left": "420",
+        "top": "105",
+        "width": "50",
+        "height": "21",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "ES_LEFT+ES_AUTOHSCROLL"
+      },
+      "proxyuser": {
+        "left": "100",
+        "top": "200",
+        "width": "150",
+        "height": "21",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "ES_LEFT+ES_AUTOHSCROLL"
+      },
+      "proxypassword": {
+        "left": "270",
+        "top": "200",
+        "width": "150",
+        "height": "21",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "ES_LEFT+ES_AUTOHSCROLL+ES_PASSWORD"
+      },
+      "checkecpdays": {
+        "left": "430",
+        "top": "75",
+        "width": "43",
+        "height": "20",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "ES_LEFT+ES_AUTOHSCROLL",
+        "tip": "Період контролю в днях\nдо завершення терміну дії ЕЦП"
+      }
+
     },
     "groups": {
       "grp1": {
@@ -134,7 +179,8 @@
         "top": "40",
         "text": "Перевіряти оновлення програми",
         "tip": "Перевіряти наявність оновлення кожен раз при запуску програми",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.CheckUpdateZvitOkPlus"
       },
       "LockCertificates": {
         "left": "35",
@@ -147,63 +193,80 @@
         "left": "35",
         "top": "76",
         "text": "Зчитувати інформацію лише з сертифікатів КНЕДП",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.InfoFromCAOnly"
       },
       "AddMissingFieldFromCustom": {
         "left": "35",
         "top": "94",
         "text": "Підтягувати відсутні дані в профіль ЕЦП з INI файлу",
         "tip": "Додавати необхідну для програми інформацію з файлу користувача",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.AddMissingFieldFromCustom"
       },
       "OptimizeListAcsk": {
         "left": "35",
         "top": "112",
         "text": "Оптимізувати список КНЕДП для автоматичного визначення",
         "tip": "Пришвидшує пошук сертифікатів при додавані підписів",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.OptimizeListAcsk"
       },
       "CSPNameInESign": {
         "left": "35",
         "top": "130",
         "text": "Відображати назву КНЕДП в описі ЕЦП",
         "tip": "Показувати більше інформації про ЕПЦ",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.CSPNameInESign"
       },
       "TreeZvitLongTitle": {
         "left": "35",
         "top": "148",
         "text": "Відображати повну назву форми в переліку звітів",
         "tip": "Показувати Код та Назву форми звіта замість Коду",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.ZvitLongTitle"
       },
       "TreeZvitTip": {
         "left": "35",
         "top": "166",
         "text": "Відображати вспливаючу підказку в переліку звітів",
         "tip": "Підказка містить назву файлу звіту",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.General.ZvitTip"
       },
       "DeleteSentReportsNoReceipt": {
         "left": "35",
         "top": "184",
-        "text": "Видаляти надіслані звіти без квитанцій",
+        "text": "Дозволити видаляти надіслані звіти без квитанцій",
         "tip": "Якщо звіт має статус 'Надісланий' та не має квітанції",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.General.DeleteSentReportsNoReceipt"
       },
       "MultiInstance": {
         "left": "35",
         "top": "202",
         "text": "Запускати кілька копій програми",
         "tip": "Якщо заборонено запуск кількох копій,\nпрограма автоматично перемикається на організацію,\nпередану в параметрах командного рядка.",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.General.MultiInstance"
       },
       "AltReceiptName": {
         "left": "35",
         "top": "220",
         "text": "Альтернативна назва файлу квитанцій",
         "tip": "Назва файлу складається з назви файлу звіту + номер квітанції,\nінакше використовується номер форми",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.General.General.AltReceiptName"
+      },
+      "AllowLegacyDll": {
+        "left": "35",
+        "top": "238",
+        "text": "Використовувати старі біліотеки (dll)",
+        "tip": "Програма використовує старі dll для сумісності",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.General.AllowLegacyDll"
       }
     },
     "labels": {
@@ -260,7 +323,7 @@
         "top": "105",
         "width": "90",
         "height": "25",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
         "style": "CBS_DROPDOWNLIST"
       }
     },
@@ -280,7 +343,7 @@
         "height": "25",
         "text": "Зберегти налаштування",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKSIZE"
-      },                                                                        
+      },
       "checkecpsave": {
         "left": "345",
         "top": "40",
@@ -291,22 +354,39 @@
       },
       "FixSystem": {
         "left": "35",
-        "top": "296",
+        "top": "306",
         "text": "Відновити систему",
         "tip": "Повертає стан системних файлів програми до початкового стану",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKSIZE"
       }
     },
     "listview": {
-        "checkecp": {
-            "left": "25",
-            "top": "187",
-            "width": "470",
-            "height": "140",
-            "onresize": "GUI_DOCKRIGHT+GUI_DOCKLEFT+GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKBOTTOM",
-            "style": "LVS_REPORT+LVS_SHOWSELALWAYS+LVS_NOSORTHEADER+WS_BORDER+L1VS_SINGLESEL",
-            "styleex": "LVS_EX_BORDERSELECT+LVS_EX_FULLROWSELECT+LVS_EX_GRIDLINES"
+      "checkecp": {
+        "left": "25",
+        "top": "187",
+        "width": "470",
+        "height": "140",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKLEFT+GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKBOTTOM",
+        "style": "LVS_REPORT+LVS_SHOWSELALWAYS+LVS_NOSORTHEADER+WS_BORDER+L1VS_SINGLESEL",
+        "styleex": "LVS_EX_BORDERSELECT+LVS_EX_FULLROWSELECT+LVS_EX_GRIDLINES",
+        "columns": {
+          "0": {
+            "title": "Термін дії",
+            "width": "120",
+            "align": "2"
+          },
+          "1": {
+            "title": "ЕДРПОУ/ІПН",
+            "width": "90",
+            "align": "1"
+          },
+          "2": {
+            "title": "Назва/ПІБ",
+            "width": "320",
+            "align": "0"
+          }
         }
+      }
     }
   },
   "mainform": {
