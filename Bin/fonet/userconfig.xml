@@ -9,7 +9,8 @@
     <FoFile></FoFile>
     <PdfFile></PdfFile>
     <Convert>True</Convert>
-    <FontType>Embed</FontType>
+    <FontType>Subset</FontType>
     <Kerning></Kerning>
 </Options>
+
 </Config>
