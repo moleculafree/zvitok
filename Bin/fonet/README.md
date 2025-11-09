@@ -15,7 +15,7 @@
 |----------|-----------------|--------------|------|
 | **Файл конфігурації** | `-config <файл>` |  | Використати власний файл конфігурації |
 | **Кернінг шрифтів** | `-kerning` | `<Kerning>True</Kerning>` | Увімкнути кернінг шрифтів |
-| **Спосіб обробки шрифтів TrueType** | `-fonttype <Link\|Embed\|Subset>` | `<FontType>Embed</FontType>` | <ul><li>`Link` — посилатись на шрифт</li><li>`Embed` — вбудовувати шрифт у PDF</li><li>`Subset` — вбудовувати лише використані символи</li></ul> |
+| **Спосіб обробки шрифтів TrueType** | `-fonttype <Link\|Embed\|Subset>` | `<FontType>Embed</FontType>` | <ul><li>`Link` — посилатись на шрифт</li><li>`Embed` — вбудовувати шрифт у PDF</li><li>`Subset` — вбудовувати лише використані символи (менше розмір файлу)</li></ul> |
 | **Файл XSL-FO** | `-fo <файл>` | `<FoFile></FoFile>` | Шлях до XSL-FO файлу (що вже містить дані та розмітку) |
 | **Файл XML з даними** | `-xml <файл>` | `<XmlFile></XmlFile>` | Шлях до XML-файлу з даними |
 | **Файл XSLT з розміткою** | `-xslt <файл>` | `<XsltFile></XsltFile>` | Шлях до XSLT-файлу розмітки |
@@ -79,7 +79,7 @@ fonet.exe -xml file.xml -xslt file.xslt -fo file.fo -pdf file.pdf
     <FoFile></FoFile>
     <PdfFile></PdfFile>
     <Convert>True</Convert>
-    <FontType>Embed</FontType>
+    <FontType>Subset</FontType>
     <Kerning></Kerning>
   </Options>
 </Config>
