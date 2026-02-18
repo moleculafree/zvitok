@@ -187,8 +187,7 @@
         "top": "58",
         "text": "Встановити атрибут 'Лише читання' для файла CACertificates.p7b",
         "tip": "Наявність атрибуту перешкоджає перезапису файлу стороніми програами",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
-        "ini": "General.LockCertificates"
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
       },
       "InfoFromCAOnly": {
         "left": "35",
@@ -235,7 +234,7 @@
         "text": "Відображати вспливаючу підказку в переліку звітів",
         "tip": "Підказка містить назву файлу звіту",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
-        "ini": "General.ZvitTip"
+        "ini": "General.General.ZvitTip"
       },
       "DeleteSentReportsNoReceipt": {
         "left": "35",
@@ -243,7 +242,7 @@
         "text": "Дозволити видаляти надіслані звіти без квитанцій",
         "tip": "Якщо звіт має статус 'Надісланий' та не має квітанції",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
-        "ini": "General.DeleteSentReportsNoReceipt"
+        "ini": "General.General.DeleteSentReportsNoReceipt"
       },
       "MultiInstance": {
         "left": "35",
@@ -251,7 +250,7 @@
         "text": "Запускати кілька копій програми",
         "tip": "Якщо заборонено запуск кількох копій,\nпрограма автоматично перемикається на організацію,\nпередану в параметрах командного рядка.",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
-        "ini": "General.MultiInstance"
+        "ini": "General.General.MultiInstance"
       },
       "AltReceiptName": {
         "left": "35",
@@ -259,7 +258,7 @@
         "text": "Альтернативна назва файлу квитанцій",
         "tip": "Назва файлу складається з назви файлу звіту + номер квітанції,\nінакше використовується номер форми",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
-        "ini": "General.AltReceiptName"
+        "ini": "General.General.General.AltReceiptName"
       },
       "AllowLegacyDll": {
         "left": "35",
@@ -267,7 +266,7 @@
         "text": "Використовувати старі біліотеки (dll)",
         "tip": "Програма використовує старі dll для сумісності",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
-        "ini": "General.AllowLegacyDll"
+        "ini": "General.General.AllowLegacyDll"
       }
     },
     "labels": {
@@ -730,6 +729,23 @@
       }
     }
   },
+  "keyreadform": {
+    "height": "155",
+    "width": "330",
+    "buttons": {
+      "passwordshow": {
+        "width": "20",
+        "height": "20",
+        "left": "288",
+        "top": "80",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKBOTTOM+GUI_DOCKSIZE",
+        "icon": {
+          "name": "icon23",
+          "size": "16"
+        }
+      }
+    }
+  },
   "icons": {
     "icon1": {
       "file": "Find.ico"
@@ -796,6 +812,12 @@
     },
     "icon122": {
       "file": "KeyOff.ico"
+    },
+    "icon23": {
+        "file": "eye.ico"
+    },
+    "icon24": {
+        "file": "eye-slash.ico"
     }
   }
 }
