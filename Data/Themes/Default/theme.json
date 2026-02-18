@@ -746,6 +746,23 @@
       }
     }
   },
+  "keyreadpbform": {
+    "height": "150",
+    "width": "465",
+    "buttons": {
+      "passwordshow": {
+        "width": "20",
+        "height": "20",
+        "left": "234",
+        "top": "117",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKBOTTOM+GUI_DOCKSIZE",
+        "icon": {
+          "name": "icon23",
+          "size": "16"
+        }
+      }
+    }
+  },
   "icons": {
     "icon1": {
       "file": "Find.ico"
