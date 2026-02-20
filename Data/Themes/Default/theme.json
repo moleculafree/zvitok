@@ -177,28 +177,36 @@
       "UpdateZvitOkPlus": {
         "left": "35",
         "top": "40",
-        "text": "Перевіряти оновлення програми",
+        "text": "Перевіряти оновлення при старті програми",
         "tip": "Перевіряти наявність оновлення кожен раз при запуску програми",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.CheckUpdateZvitOkPlus"
       },
-      "LockCertificates": {
+      "DirectDownload": {
         "left": "35",
         "top": "58",
+        "text": "Завантажувати оновлені файли без переходу на сайт",
+        "tip": "Для оновлення необхідних файлів буде використовуватись пряме завантаження",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.DirectDownload"
+      },
+      "LockCertificates": {
+        "left": "35",
+        "top": "76",
         "text": "Встановити атрибут 'Лише читання' для файла CACertificates.p7b",
         "tip": "Наявність атрибуту перешкоджає перезапису файлу стороніми програами",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
       },
       "InfoFromCAOnly": {
         "left": "35",
-        "top": "76",
+        "top": "94",
         "text": "Зчитувати інформацію лише з сертифікатів КНЕДП",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.InfoFromCAOnly"
       },
       "AddMissingFieldFromCustom": {
         "left": "35",
-        "top": "94",
+        "top": "112",
         "text": "Підтягувати відсутні дані в профіль ЕЦП з INI файлу",
         "tip": "Додавати необхідну для програми інформацію з файлу користувача",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -206,7 +214,7 @@
       },
       "OptimizeListAcsk": {
         "left": "35",
-        "top": "112",
+        "top": "130",
         "text": "Оптимізувати список КНЕДП для автоматичного визначення",
         "tip": "Пришвидшує пошук сертифікатів при додавані підписів",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -214,7 +222,7 @@
       },
       "CSPNameInESign": {
         "left": "35",
-        "top": "130",
+        "top": "148",
         "text": "Відображати назву КНЕДП в описі ЕЦП",
         "tip": "Показувати більше інформації про ЕПЦ",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -222,7 +230,7 @@
       },
       "TreeZvitLongTitle": {
         "left": "35",
-        "top": "148",
+        "top": "166",
         "text": "Відображати повну назву форми в переліку звітів",
         "tip": "Показувати Код та Назву форми звіта замість Коду",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -230,43 +238,43 @@
       },
       "TreeZvitTip": {
         "left": "35",
-        "top": "166",
+        "top": "184",
         "text": "Відображати вспливаючу підказку в переліку звітів",
         "tip": "Підказка містить назву файлу звіту",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
-        "ini": "General.General.ZvitTip"
+        "ini": "General.ZvitTip"
       },
       "DeleteSentReportsNoReceipt": {
         "left": "35",
-        "top": "184",
+        "top": "202",
         "text": "Дозволити видаляти надіслані звіти без квитанцій",
         "tip": "Якщо звіт має статус 'Надісланий' та не має квітанції",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
-        "ini": "General.General.DeleteSentReportsNoReceipt"
+        "ini": "General.DeleteSentReportsNoReceipt"
       },
       "MultiInstance": {
         "left": "35",
-        "top": "202",
+        "top": "220",
         "text": "Запускати кілька копій програми",
         "tip": "Якщо заборонено запуск кількох копій,\nпрограма автоматично перемикається на організацію,\nпередану в параметрах командного рядка.",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
-        "ini": "General.General.MultiInstance"
+        "ini": "General.MultiInstance"
       },
       "AltReceiptName": {
         "left": "35",
-        "top": "220",
+        "top": "238",
         "text": "Альтернативна назва файлу квитанцій",
         "tip": "Назва файлу складається з назви файлу звіту + номер квітанції,\nінакше використовується номер форми",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
-        "ini": "General.General.General.AltReceiptName"
+        "ini": "General.AltReceiptName"
       },
       "AllowLegacyDll": {
         "left": "35",
-        "top": "238",
+        "top": "256",
         "text": "Використовувати старі біліотеки (dll)",
         "tip": "Програма використовує старі dll для сумісності",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
-        "ini": "General.General.AllowLegacyDll"
+        "ini": "General.AllowLegacyDll"
       }
     },
     "labels": {
@@ -341,7 +349,7 @@
         "top": "285",
         "width": "150",
         "height": "25",
-        "text": "Зберегти налаштування",
+        "text": "Використовувати прокси",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKSIZE"
       },
       "checkecpsave": {
@@ -349,7 +357,7 @@
         "top": "40",
         "width": "140",
         "height": "20",
-        "text": "Зберегти налаштування",
+        "text": "Перевірка підключення",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
       },
       "FixSystem": {

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" exclude-result-prefixes="fo">
+   <xsl:output method="xml" version="1.0" omit-xml-declaration="no" indent="yes"/>
+       <xsl:template match="/">
+         <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+            <fo:layout-master-set>
+               <fo:simple-page-master margin-right="0.5cm" margin-left="2cm" margin-bottom="1cm" margin-top="0.5cm" page-width="21cm" page-height="29.7cm" master-name="first">
+                   <fo:region-body margin-top="0.5cm" margin-bottom="0.5cm"/>
+               </fo:simple-page-master>
+            </fo:layout-master-set>
+            <fo:page-sequence font-family="Arial" master-reference="first">
+               <fo:flow flow-name="xsl-region-body">
+                    <fo:block font-size="14pt" font-weight="bold" text-align="center" space-after="12pt">
+                        Не знайдено шаблон для формування PDF версії файлу
+                    </fo:block>
+                    <fo:block font-size="13pt" font-weight="bold" space-after="6pt">
+                    Як це виправити?
+                    </fo:block>
+                    <fo:block font-size="12pt" space-after="6pt">
+                   Потрібно додати файл 
+                   <xsl:value-of select="DECLAR/DECLARHEAD/C_DOC"/><xsl:value-of select="DECLAR/DECLARHEAD/C_DOC_SUB"/><xsl:value-of select="DECLAR/DECLARHEAD/C_DOC_VER"/><xsl:value-of select="DECLAR/DECLARHEAD/C_DOC_TYPE"/>.fo в теку шаблонів \Data\Templates\ щоб програма могла створити PDF для друку або просмотру.
+                   </fo:block>
+                   <fo:block font-size="13pt" font-weight="bold" space-after="6pt">
+                    Де взяти файл?
+                    </fo:block>
+                    <fo:block font-size="12pt" space-after="6pt">
+                    <fo:block>1. Використати пошук в мережі Інтернет та завантажити вже готовий файл.</fo:block>
+                    <fo:block>2. Переглянути <fo:basic-link external-destination="url('https://tax.gov.ua/zakonodavstvo/elektronni-formi-dokumentiv/reestr-form-elektronnih-dokumentiv')">Реєстр форм електронних документів</fo:basic-link> і спробувати створити потрібний XSLT файл.</fo:block>
+                    <fo:block>3. Звернутись до технічного письменника з навичками форматування XSLT документів.</fo:block>
+                    <fo:block>4. Попередній пункт доволі дієвий.</fo:block>
+                    <fo:block>5. Вибрати свій шлях.</fo:block>
+                   </fo:block>
+               </fo:flow>
+           </fo:page-sequence>
+       </fo:root>
+    </xsl:template>
+</xsl:stylesheet>
