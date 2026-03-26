@@ -1,23 +1,18 @@
 {
   "title": "Класична",
   "settingsform": {
-    "height": "532",
-    "width": "355",
-    "tabs": {
-      "tab": {
-        "left": "15",
-        "top": "15",
-        "width": "492",
-        "height": "320",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKBOTTOM"
+    "self": {
+      "form": {
+        "width": "546",
+        "height": "500"
       }
     },
-    "graphic": {
-      "gra1": {
-        "left": "25",
-        "top": "50",
-        "width": "470",
-        "height": "117",
+    "tabs": {
+      "tab": {
+        "left": "8",
+        "top": "6",
+        "width": "516",
+        "height": "448",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKBOTTOM"
       }
     },
@@ -64,47 +59,60 @@
         "style": "ES_LEFT+ES_AUTOHSCROLL",
         "tip": "Період контролю в днях\nдо завершення терміну дії ЕЦП"
       }
-
     },
     "groups": {
-      "grp1": {
-        "left": "35",
+      "graESPControl": {
+        "left": "25",
+        "top": "45",
+        "width": "482",
+        "height": "170",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
+      },
+      "grpProxy": {
+        "left": "25",
         "top": "65",
-        "width": "450",
+        "width": "470",
         "height": "80",
         "text": "Налаштування параметрів проксі серверу",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
       },
-      "grp2": {
-        "left": "35",
+      "grpAuth": {
+        "left": "25",
         "top": "160",
-        "width": "450",
+        "width": "470",
         "height": "80",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
       },
-      "grp3": {
+      "grpECPSlider": {
         "left": "35",
         "top": "63",
-        "width": "450",
+        "width": "460",
         "height": "43",
         "text": "Період (днів) до завершення терміну дії",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
       },
-      "grp4": {
-        "left": "35",
+      "grpECPExpiry1": {
+        "left": "35 ",
         "top": "110",
         "width": "230",
         "height": "55",
         "text": "Сповіщення про термін дії",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKWIDTH"
       },
-      "grp5": {
+      "grpECPExpiry2": {
         "left": "275",
         "top": "110",
-        "width": "210",
+        "width": "220",
         "height": "55",
         "text": "Візуальне відображення терміну дії",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
+      },
+      "grpFix": {
+        "left": "25",
+        "top": "375",
+        "width": "484",
+        "height": "65",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM"
       }
     },
     "checkbox": {
@@ -143,22 +151,27 @@
       "visualending": {
         "left": "285",
         "top": "123",
-        "width": "18",
-        "height": "18",
+        "width": "190",
+        "height": "14",
+        "text": "Термін дії ЕЦП завершується",
         "tip": "Візуальне відображення завершення терміну дії\nв межах встановленого періоду контролю",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "bkcolor": "bg:warning"
       },
       "visualended": {
         "left": "285",
         "top": "142",
-        "width": "18",
-        "height": "18",
+        "width": "190",
+        "height": "14",
+        "text": "Термін дії ЕЦП завершено",
         "tip": "Візуальне відображення завершеного терміну дії ЕЦП",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "textcolor": "text:secondary",
+        "bkcolor": "bg:secondary"
       },
       "showending": {
         "left": "35",
-        "top": "169",
+        "top": "228",
         "width": "-1",
         "height": "18",
         "text": "Термін дії в заданому періоді",
@@ -166,8 +179,8 @@
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
       },
       "showended": {
-        "left": "350",
-        "top": "168",
+        "left": "225",
+        "top": "228",
         "width": "-1",
         "height": "18",
         "text": "Термін дії завершено",
@@ -175,7 +188,7 @@
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
       },
       "UpdateZvitOkPlus": {
-        "left": "35",
+        "left": "30",
         "top": "40",
         "text": "Перевіряти оновлення при старті програми",
         "tip": "Перевіряти наявність оновлення кожен раз при запуску програми",
@@ -183,7 +196,7 @@
         "ini": "General.CheckUpdateZvitOkPlus"
       },
       "DirectDownload": {
-        "left": "35",
+        "left": "30",
         "top": "58",
         "text": "Завантажувати оновлені файли без переходу на сайт",
         "tip": "Для оновлення необхідних файлів буде використовуватись пряме завантаження",
@@ -191,86 +204,102 @@
         "ini": "General.DirectDownload"
       },
       "LockCertificates": {
-        "left": "35",
-        "top": "76",
+        "left": "30",
+        "top": "94",
         "text": "Встановити атрибут 'Лише читання' для файла CACertificates.p7b",
         "tip": "Наявність атрибуту перешкоджає перезапису файлу стороніми програами",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
       },
       "InfoFromCAOnly": {
-        "left": "35",
-        "top": "94",
+        "left": "30",
+        "top": "112",
         "text": "Зчитувати інформацію лише з сертифікатів КНЕДП",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.InfoFromCAOnly"
       },
+      "ExtractFromTickets": {
+        "left": "30",
+        "top": "130",
+        "text": "Імпортувати сертифікати з квитанцій",
+        "tip": "Якщо вхідне повідомлення містить сертифікат, його буде збережено у теку \\Certificates",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "Certificates.ExtractFromTickets"
+      },
       "AddMissingFieldFromCustom": {
-        "left": "35",
-        "top": "112",
-        "text": "Підтягувати відсутні дані в профіль ЕЦП з INI файлу",
+        "left": "30",
+        "top": "148",
+        "text": "Додавати відсутні дані в профіль ЕЦП з INI файлу",
         "tip": "Додавати необхідну для програми інформацію з файлу користувача",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.AddMissingFieldFromCustom"
       },
       "OptimizeListAcsk": {
-        "left": "35",
-        "top": "130",
+        "left": "30",
+        "top": "166",
         "text": "Оптимізувати список КНЕДП для автоматичного визначення",
         "tip": "Пришвидшує пошук сертифікатів при додавані підписів",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.OptimizeListAcsk"
       },
       "CSPNameInESign": {
-        "left": "35",
-        "top": "148",
+        "left": "30",
+        "top": "184",
         "text": "Відображати назву КНЕДП в описі ЕЦП",
         "tip": "Показувати більше інформації про ЕПЦ",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.CSPNameInESign"
       },
       "TreeZvitLongTitle": {
-        "left": "35",
-        "top": "166",
+        "left": "30",
+        "top": "220",
         "text": "Відображати повну назву форми в переліку звітів",
         "tip": "Показувати Код та Назву форми звіта замість Коду",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.ZvitLongTitle"
       },
       "TreeZvitTip": {
-        "left": "35",
-        "top": "184",
+        "left": "30",
+        "top": "238",
         "text": "Відображати вспливаючу підказку в переліку звітів",
         "tip": "Підказка містить назву файлу звіту",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.ZvitTip"
       },
       "DeleteSentReportsNoReceipt": {
-        "left": "35",
-        "top": "202",
+        "left": "30",
+        "top": "256",
         "text": "Дозволити видаляти надіслані звіти без квитанцій",
         "tip": "Якщо звіт має статус 'Надісланий' та не має квітанції",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.DeleteSentReportsNoReceipt"
       },
-      "MultiInstance": {
-        "left": "35",
-        "top": "220",
-        "text": "Запускати кілька копій програми",
-        "tip": "Якщо заборонено запуск кількох копій,\nпрограма автоматично перемикається на організацію,\nпередану в параметрах командного рядка.",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
-        "ini": "General.MultiInstance"
-      },
       "AltReceiptName": {
-        "left": "35",
-        "top": "238",
+        "left": "30",
+        "top": "274",
         "text": "Альтернативна назва файлу квитанцій",
         "tip": "Назва файлу складається з назви файлу звіту + номер квітанції,\nінакше використовується номер форми",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.AltReceiptName"
       },
+      "IMAPNoDeleteReadEmails": {
+        "left": "30",
+        "top": "292",
+        "text": "Не видаляти вхідні листи з поштової скриньки",
+        "tip": "Після обробки квитанції вхдіний лист маркується як Прочитаний та залишається в скриньці.\nПрацює лише для IMAP протоколу.",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.IMAPNoDeleteReadEmails"
+      },
+      "MultiInstance": {
+        "left": "30",
+        "top": "328",
+        "text": "Дозволити запускати кілька копій програми",
+        "tip": "Якщо заборонено запуск кількох копій,\nпрограма автоматично перемикається на організацію,\nпередану в параметрах командного рядка.",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.MultiInstance"
+      },
       "AllowLegacyDll": {
-        "left": "35",
-        "top": "256",
+        "left": "30",
+        "top": "346",
         "text": "Використовувати старі біліотеки (dll)",
         "tip": "Програма використовує старі dll для сумісності",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -308,21 +337,14 @@
         "text": "Пароль:",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
       },
-      "label6": {
-        "left": "300",
-        "top": "125",
-        "width": "170",
-        "height": "14",
-        "text": " Термін дії ЕЦП завершується",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
-      },
-      "label7": {
-        "left": "300",
-        "top": "143",
-        "width": "170",
-        "height": "14",
-        "text": " Термін дії ЕЦП завершено",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
+      "label8": {
+        "left": "40",
+        "top": "390",
+        "width": "320",
+        "height": "40",
+        "text": "Увага! Відновлення системи скине налаштування користувача та видалить файли сертифікатів ЦЗО. Цю дію неможливо скасувати.",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKHEIGHT+GUI_DOCKSIZE",
+        "textcolor": "#a47e0a"
       }
     },
     "combo": {
@@ -337,45 +359,48 @@
     },
     "buttons": {
       "proxytest": {
-        "left": "90",
-        "top": "285",
+        "left": "100",
+        "top": "255",
         "width": "150",
         "height": "25",
         "text": "Перевірка підключення",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKSIZE"
+        "o1nresize": "GUI_DOCKLEFT+GUI_DOCKSIZE"
       },
       "proxysave": {
         "left": "270",
-        "top": "285",
+        "top": "255",
         "width": "150",
         "height": "25",
         "text": "Використовувати прокси",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKSIZE"
+        "o1nresize": "GUI_DOCKLEFT+GUI_DOCKSIZE"
       },
       "checkecpsave": {
-        "left": "345",
-        "top": "40",
+        "left": "215",
+        "top": "180",
         "width": "140",
-        "height": "20",
-        "text": "Перевірка підключення",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+        "height": "25",
+        "text": "Зберігти налаштування",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKSIZE"
       },
       "FixSystem": {
-        "left": "35",
-        "top": "306",
+        "left": "365",
+        "top": "402",
+        "width": "120",
         "text": "Відновити систему",
         "tip": "Повертає стан системних файлів програми до початкового стану",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKSIZE"
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKBOTTOM+GUI_DOCKSIZE",
+        "bkcolor": "#dc3545",
+        "textcolor": "#ffffff"
       }
     },
     "listview": {
       "checkecp": {
         "left": "25",
-        "top": "187",
-        "width": "470",
-        "height": "140",
-        "onresize": "GUI_DOCKRIGHT+GUI_DOCKLEFT+GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKBOTTOM",
-        "style": "LVS_REPORT+LVS_SHOWSELALWAYS+LVS_NOSORTHEADER+WS_BORDER+L1VS_SINGLESEL",
+        "top": "250",
+        "width": "482",
+        "height": "190",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKBOTTOM",
+        "style": "LVS_REPORT+LVS_SHOWSELALWAYS+LVS_NOSORTHEADER",
         "styleex": "LVS_EX_BORDERSELECT+LVS_EX_FULLROWSELECT+LVS_EX_GRIDLINES",
         "columns": {
           "0": {
@@ -390,16 +415,81 @@
           },
           "2": {
             "title": "Назва/ПІБ",
-            "width": "320",
+            "width": "260",
             "align": "0"
           }
         }
       }
     }
   },
+  "update": {
+    "self": {
+      "form": {
+        "height": "500",
+        "width": "620"
+      }
+    }
+  },
+  "about": {
+    "self": {
+      "form": {
+        "height": "550",
+        "width": "650"
+      }
+    }
+  },
+  "custom": {
+    "self": {
+      "form": {
+        "height": "300",
+        "width": "620"
+      }
+    },
+    "groups": {
+      "grpFrame": {
+        "left": "8",
+        "top": "2",
+        "width": "588",
+        "height": "210",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKBOTTOM"
+      }
+    },
+    "rel": {
+      "content": {
+        "left": "14",
+        "top": "12",
+        "width": "565",
+        "height": "190",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKLEFT+GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKBOTTOM"
+      }
+    },
+    "buttons": {
+      "btnOk": {
+        "left": "260",
+        "top": "225",
+        "width": "100",
+        "height": "25",
+        "text": "OK",
+        "onresize": "GUI_DOCKCENTER+GUI_DOCKBOTTOM+GUI_DOCKSIZE"
+      }
+    }
+  },
   "mainform": {
-    "height": "500",
-    "width": "442",
+    "self": {
+      "form": {
+        "width": "440",
+        "height": "392"
+      }
+    },
+    "rel": {
+      "status": {
+        "left": "54",
+        "top": "304",
+        "width": "360",
+        "height": "44",
+        "style": "ES_MULTILINE+ES_READONLY+ES_NOHIDESEL"
+      }
+    },
     "labels": {
       "filterLabel1": {
         "left": "16",
@@ -412,53 +502,39 @@
         "top": "87",
         "text": "до ",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
-      },
-      "infoLabel1": {
-        "left": "60",
-        "top": "480",
-        "width": "350",
-        "style": "SS_CENTER",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKHEIGHT"
-      },
-      "infoLabel2": {
-        "left": "60",
-        "top": "496",
-        "width": "350",
-        "style": "SS_CENTER",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKHEIGHT"
       }
     },
     "groups": {
-      "grp1": {
-        "width": "425",
+      "grpOrg": {
+        "width": "408",
         "height": "50",
         "left": "8",
         "top": "8",
         "text": "Організація/ФОП: ",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP"
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
       },
-      "grp2": {
-        "width": "425",
+      "grpFilter": {
+        "width": "408",
         "height": "50",
         "left": "8",
         "top": "64",
         "text": "Фільтр для звітів: ",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
       },
-      "grp3": {
-        "width": "425",
-        "height": "351",
+      "grpZvit": {
         "left": "8",
         "top": "120",
+        "width": "408",
+        "height": "180",
         "text": "Звіти та квитанції: ",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKBOTTOM"
       }
     },
     "combo": {
       "org": {
-        "width": "300",
+        "width": "280",
         "height": "400",
-        "left": "17",
+        "left": "15",
         "top": "25",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT",
         "style": "WS_SCROLL+CBS_DROPDOWNLIST+CBS_AUTOHSCROLL+CBS_SORT+WS_CHILD+CBS_OWNERDRAWVARIABLE+CBS_HASSTRINGS"
@@ -489,7 +565,7 @@
       "orgadd": {
         "width": "32",
         "height": "32",
-        "left": "322",
+        "left": "310",
         "top": "20",
         "icon": {
           "name": "icon2",
@@ -502,7 +578,7 @@
       "orgedit": {
         "width": "32",
         "height": "32",
-        "left": "357",
+        "left": "345",
         "top": "20",
         "icon": {
           "name": "icon3",
@@ -514,7 +590,7 @@
       "orgdel": {
         "width": "32",
         "height": "32",
-        "left": "392",
+        "left": "380",
         "top": "20",
         "icon": {
           "name": "icon4",
@@ -526,7 +602,7 @@
       "refresh": {
         "width": "32",
         "height": "32",
-        "left": "392",
+        "left": "380",
         "top": "76",
         "icon": {
           "name": "icon5",
@@ -575,7 +651,7 @@
       "xlmsend": {
         "width": "36",
         "height": "35",
-        "left": "350",
+        "left": "335",
         "top": "136",
         "icon": {
           "name": "icon9",
@@ -587,7 +663,7 @@
       "xlmreceive": {
         "width": "36",
         "height": "35",
-        "left": "388",
+        "left": "373",
         "top": "136",
         "icon": {
           "name": "icon10",
@@ -613,7 +689,7 @@
         "width": "36",
         "height": "35",
         "left": "16",
-        "top": "480",
+        "top": "308",
         "icon": {
           "name": "icon12",
           "size": "32"
@@ -621,80 +697,181 @@
         "tip": "Меню програми",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKSIZE"
       }
+    },
+    "listview": {
+      "lvzvit": {
+        "left": "16",
+        "top": "175",
+        "style": "LVS_REPORT+LVS_ICON+LVS_SHOWSELALWAYS+LVS_NOSORTHEADER+LVS_SINGLESEL+WS_BORDER",
+        "styleex": "LVS_EX_BORDERSELECT+LVS_EX_FULLROWSELECT",
+        "columns": {
+          "0": {
+            "title": "Код форми",
+            "width": "130",
+            "align": "0"
+          },
+          "1": {
+            "title": "Статус",
+            "width": "73",
+            "align": "1"
+          },
+          "2": {
+            "title": "Період",
+            "width": "60",
+            "align": "2"
+          },
+          "3": {
+            "title": "Стан",
+            "width": "55",
+            "align": "2"
+          },
+          "4": {
+            "title": "№ звіту",
+            "width": "50",
+            "align": "2"
+          },
+          "5": {
+            "title": "Дата/час",
+            "width": "116",
+            "align": "2"
+          }
+        },
+        "status": {
+            "title": {
+              "0": "Надісланий",
+              "1": "Надісланий",
+              "2": "Надісланий",
+              "99999999": "Отриманий",
+              "new": "Імпортований",
+              "approved": "Прийнятий",
+              "error": "Помилковий"
+            },
+            "colors": {
+              "bg": {
+                "ticket": {
+                  "0": "#00FF00",
+                  "1": "#FF6600",
+                  "2": "#00FFFF"
+                },
+                "zvit": {
+                  "0": "#FFFF00",
+                  "1": "#FFFF00",
+                  "2": "#FFFF00",
+                  "3": "#00FF00",
+                  "new": "#F0F0F0",
+                  "error": "#FF6600",
+                  "beyond": "#00BC00"
+                }
+              }
+            }
+          },
+        "stan": {
+          "XML":{
+            "title": {
+              "00": "Звітний",
+              "01": "Новий звітний",
+              "02": "Уточнюючий",
+              "undefined": "Невідомий"
+            }
+          },
+          "PFZ":{
+            "title": {
+              "1": "Початковий",
+              "2": "Додатковий",
+              "3": "Скасовуючий",
+              "undefined": "Невідомий"
+            }
+          }
+        }
+      }
     }
   },
   "importform": {
-    "height": "330",
-    "width": "615",
+    "self": {
+      "form": {
+        "width": "640",
+        "height": "514"
+      }
+    },
     "groups": {
-      "grp1": {
-        "width": "585",
-        "height": "265",
-        "left": "15",
+      "grpTreePath": {
+        "left": "8",
         "top": "10",
+        "width": "628",
+        "height": "466",
         "text": "Вибір звітів: ",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKBOTTOM"
+      },
+      "grpInfoMemo": {
+        "left": "240",
+        "top": "248",
+        "width": "370",
+        "height": "146",
+        "text": "Опис файлу: ",
+        "onresize": "GUI_DOCKCENTER+GUI_DOCKBOTTOM"
       }
     },
     "buttons": {
       "zvitimport": {
-        "width": "120",
+        "left": "252",
+        "top": "434",
+        "width": "90",
         "height": "25",
-        "left": "210",
-        "top": "288",
         "text": "Імпортувати",
-        "onresize": "GUI_DOCKRIGHT+GUI_DOCKBOTTOM+GUI_DOCKSIZE",
-        "hotkey": "{F5}"
+        "onresize": "GUI_DOCKCENTER+GUI_DOCKBOTTOM",
+        "hotkey": "{F5}",
+        "b1kcolor": "#09c26c",
+        "t1extcolor": "#007740"
       },
       "zvitview": {
-        "width": "120",
+        "left": "352",
+        "top": "434",
+        "width": "90",
         "height": "25",
-        "left": "340",
-        "top": "288",
         "text": "Переглянути",
-        "onresize": "GUI_DOCKRIGHT+GUI_DOCKBOTTOM+GUI_DOCKSIZE",
+        "onresize": "GUI_DOCKCENTER+GUI_DOCKBOTTOM",
         "hotkey": "{F3}"
       },
       "zvitcancel": {
-        "width": "120",
+        "left": "516",
+        "top": "434",
+        "width": "90",
         "height": "25",
-        "left": "470",
-        "top": "288",
         "text": "Відміна",
         "onresize": "GUI_DOCKRIGHT+GUI_DOCKBOTTOM+GUI_DOCKSIZE",
         "hotkey": "{ESC}"
       },
       "quick1": {
+        "left": "162",
+        "top": "8",
         "width": "20",
         "height": "20",
-        "left": "133",
-        "top": "8",
         "tip": "Перейти до папки",
-        "onresize": "G1UI_DOCKLEFT+GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "onresize": "GUI_DOCKTOP+GUI_DOCKSIZE",
         "icon": {
           "name": "icon16",
           "size": "16"
         }
       },
       "quick2": {
+        "left": "184",
+        "top": "8",
         "width": "20",
         "height": "20",
-        "left": "158",
-        "top": "8",
         "tip": "Перейти до папки",
-        "onresize": "G1UI_DOCKLEFT+GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "onresize": "GUI_DOCKTOP+GUI_DOCKSIZE",
         "icon": {
           "name": "icon16",
           "size": "16"
         }
       },
       "quick3": {
+        "left": "204",
+        "top": "8",
         "width": "20",
         "height": "20",
-        "left": "183",
-        "top": "8",
         "tip": "Перейти до папки",
-        "onresize": "G1UI_DOCKLEFT+GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "onresize": "GUI_DOCKTOP+GUI_DOCKSIZE",
         "icon": {
           "name": "icon16",
           "size": "16"
@@ -702,37 +879,55 @@
       }
     },
     "checkbox": {
-      "zvitdelete": {
-        "left": "25",
-        "top": "290",
-        "text": "Видаляти імпортовані звіти",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKSIZE"
-      },
       "zvitcheck": {
-        "left": "220",
+        "left": "244",
         "top": "8",
         "text": "Перевіряти на помилки",
         "tip": "Перевіряти/вимкнути\nперевірку на помилки",
-        "onresize": "GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKSIZE"
+        "onresize": "GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "Interface.ImportErrorCheck"
+      },
+      "zvitdelete": {
+        "left": "258",
+        "top": "402",
+        "text": "Видаляти імпортовані звіти",
+        "onresize": "GUI_DOCKCENTER+GUI_DOCKBOTTOM"
       }
     },
     "tree": {
       "treePath": {
-        "width": "180",
-        "height": "233",
-        "left": "24",
+        "left": "16",
         "top": "30",
-        "onresize": "GUI_DOCKLEFT+G1UI_DOCKRIGHT+GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKBOTTOM",
+        "width": "220",
+        "height": "428",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKBOTTOM",
         "style": "TVS_HASBUTTONS+TVS_HASLINES+TVS_SHOWSELAWAYS+TVS_LINESATROOT+TVS_DISABLEDRAGDROP+WS_TABSTOP",
         "styleex": "WS_EX_CLIENTEDGE"
       },
       "treeZvit": {
-        "width": "370",
-        "height": "233",
-        "left": "220",
+        "left": "240",
         "top": "30",
-        "onresize": "G1UI_DOCKRIGHT+G1UI_DOCKLEFT+GUI_DOCKCENTER+GUI_DOCKTOP+GUI_DOCKBOTTOM",
-        "style": "TVS_HASBUTTONS+TVS_HASLINES+TVS_CHECKBOXES+TVS_SHOWSELAWAYS+WS_TABSTOP",
+        "width": "368",
+        "height": "213",
+        "onresize": "GUI_DOCKTOP",
+        "style": "TVS_HASBUTTONS+TVS_HASLINES+TVS_CHECKBOXES+WS_TABSTOP+TVS_SHOWSELALWAYS",
+        "styleex": "WS_EX_CLIENTEDGE"
+      }
+    },
+    "labels": {
+      "treeTitle": {
+        "left": "8",
+        "top": "8",
+        "text": "Вибір звітів: ",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "infoMemo": {
+        "left": "248",
+        "top": "270",
+        "width": "358",
+        "height": "116",
+        "text": "123\n123",
+        "onresize": "GUI_DOCKCENTER+GUI_DOCKBOTTOM",
         "styleex": "WS_EX_CLIENTEDGE"
       }
     }
@@ -839,10 +1034,26 @@
       "file": "KeyOff.ico"
     },
     "icon23": {
-        "file": "eye.ico"
+      "file": "eye.ico"
     },
     "icon24": {
-        "file": "eye-slash.ico"
+      "file": "eye-slash.ico"
+    }
+  },
+  "colors": {
+    "text": {
+      "primary": "#101010",
+      "highlight": "#8ee3f0",
+      "secondary": "#6c757d",
+      "link": "#00FFFF",
+      "quote": "#787878"
+    },
+    "bg": {
+      "window": "system:btnface",
+      "primary": "#FFFFFF",
+      "secondary": "#CDCDCD",
+      "warning": "#ffc107",
+      "success": "#198754"
     }
   }
 }
