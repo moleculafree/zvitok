@@ -166,7 +166,7 @@
         "text": "Термін дії ЕЦП завершено",
         "tip": "Візуальне відображення завершеного терміну дії ЕЦП",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
-        "textcolor": "text:secondary",
+        "textcolor": "secondary",
         "bkcolor": "bg:secondary"
       },
       "showending": {
@@ -1046,7 +1046,18 @@
       "highlight": "#8ee3f0",
       "secondary": "#6c757d",
       "link": "#00FFFF",
-      "quote": "#787878"
+      "quote": "#787878",
+      "red": "#FF0000",
+      "green": "#008000",
+      "blue": "#0000FF",
+      "orange": "#FFA500",
+      "yellow": "#FFFF00",
+      "purple": "#9966FA",
+      "grey": "#6C757D",
+      "lightgrey": "#D3D3D3",
+      "darkgrey": "#212529",
+      "white": "#FFFFFF",
+      "black": "#000000"
     },
     "bg": {
       "window": "system:btnface",
