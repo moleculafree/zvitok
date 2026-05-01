@@ -203,23 +203,16 @@
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.DirectDownload"
       },
-      "LockCertificates": {
-        "left": "30",
-        "top": "94",
-        "text": "Встановити атрибут 'Лише читання' для файла CACertificates.p7b",
-        "tip": "Наявність атрибуту перешкоджає перезапису файлу стороніми програами",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
-      },
       "InfoFromCAOnly": {
         "left": "30",
-        "top": "112",
+        "top": "94",
         "text": "Зчитувати інформацію лише з сертифікатів КНЕДП",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.InfoFromCAOnly"
       },
       "ExtractFromTickets": {
         "left": "30",
-        "top": "130",
+        "top": "112",
         "text": "Імпортувати сертифікати з квитанцій",
         "tip": "Якщо вхідне повідомлення містить сертифікат, його буде збережено у теку \\Certificates",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -227,7 +220,7 @@
       },
       "AddMissingFieldFromCustom": {
         "left": "30",
-        "top": "148",
+        "top": "130",
         "text": "Додавати відсутні дані в профіль ЕЦП з INI файлу",
         "tip": "Додавати необхідну для програми інформацію з файлу користувача",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -235,7 +228,7 @@
       },
       "OptimizeListAcsk": {
         "left": "30",
-        "top": "166",
+        "top": "148",
         "text": "Оптимізувати список КНЕДП для автоматичного визначення",
         "tip": "Пришвидшує пошук сертифікатів при додавані підписів",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -243,7 +236,7 @@
       },
       "CSPNameInESign": {
         "left": "30",
-        "top": "184",
+        "top": "166",
         "text": "Відображати назву КНЕДП в описі ЕЦП",
         "tip": "Показувати більше інформації про ЕПЦ",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -251,7 +244,7 @@
       },
       "TreeZvitLongTitle": {
         "left": "30",
-        "top": "220",
+        "top": "184",
         "text": "Відображати повну назву форми в переліку звітів",
         "tip": "Показувати Код та Назву форми звіта замість Коду",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -259,7 +252,7 @@
       },
       "TreeZvitTip": {
         "left": "30",
-        "top": "238",
+        "top": "202",
         "text": "Відображати вспливаючу підказку в переліку звітів",
         "tip": "Підказка містить назву файлу звіту",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -345,6 +338,12 @@
         "text": "Увага! Відновлення системи скине налаштування користувача та видалить файли сертифікатів ЦЗО. Цю дію неможливо скасувати.",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKHEIGHT+GUI_DOCKSIZE",
         "textcolor": "#a47e0a"
+      },
+      "styleTreeZvitTip": {
+        "left": "45",
+        "top": "228",
+        "text": "Розташування підказки:",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
       }
     },
     "combo": {
@@ -352,6 +351,14 @@
         "left": "45",
         "top": "105",
         "width": "90",
+        "height": "25",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "CBS_DROPDOWNLIST"
+      },
+      "styleTreeZvitTip": {
+        "left": "175",
+        "top": "224",
+        "width": "130",
         "height": "25",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
         "style": "CBS_DROPDOWNLIST"
