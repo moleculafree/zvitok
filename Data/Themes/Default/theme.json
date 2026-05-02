@@ -3,16 +3,16 @@
   "settingsform": {
     "self": {
       "form": {
-        "width": "546",
-        "height": "500"
+        "width": "560",
+        "height": "572"
       }
     },
     "tabs": {
       "tab": {
         "left": "8",
         "top": "6",
-        "width": "516",
-        "height": "448",
+        "width": "528",
+        "height": "520",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKBOTTOM"
       }
     },
@@ -64,14 +64,14 @@
       "graESPControl": {
         "left": "25",
         "top": "45",
-        "width": "482",
+        "width": "496",
         "height": "170",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
       },
       "grpProxy": {
         "left": "25",
         "top": "65",
-        "width": "470",
+        "width": "486",
         "height": "80",
         "text": "Налаштування параметрів проксі серверу",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
@@ -79,14 +79,14 @@
       "grpAuth": {
         "left": "25",
         "top": "160",
-        "width": "470",
+        "width": "486",
         "height": "80",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
       },
       "grpECPSlider": {
         "left": "35",
         "top": "63",
-        "width": "460",
+        "width": "476",
         "height": "43",
         "text": "Період (днів) до завершення терміну дії",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
@@ -102,15 +102,15 @@
       "grpECPExpiry2": {
         "left": "275",
         "top": "110",
-        "width": "220",
+        "width": "236",
         "height": "55",
         "text": "Візуальне відображення терміну дії",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
       },
       "grpFix": {
         "left": "25",
-        "top": "375",
-        "width": "484",
+        "top": "452",
+        "width": "500",
         "height": "65",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM"
       }
@@ -260,7 +260,7 @@
       },
       "DeleteSentReportsNoReceipt": {
         "left": "30",
-        "top": "256",
+        "top": "264",
         "text": "Дозволити видаляти надіслані звіти без квитанцій",
         "tip": "Якщо звіт має статус 'Надісланий' та не має квітанції",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -268,7 +268,7 @@
       },
       "AltReceiptName": {
         "left": "30",
-        "top": "274",
+        "top": "282",
         "text": "Альтернативна назва файлу квитанцій",
         "tip": "Назва файлу складається з назви файлу звіту + номер квітанції,\nінакше використовується номер форми",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -276,7 +276,7 @@
       },
       "IMAPNoDeleteReadEmails": {
         "left": "30",
-        "top": "292",
+        "top": "300",
         "text": "Не видаляти вхідні листи з поштової скриньки",
         "tip": "Після обробки квитанції вхдіний лист маркується як Прочитаний та залишається в скриньці.\nПрацює лише для IMAP протоколу.",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -284,7 +284,7 @@
       },
       "MultiInstance": {
         "left": "30",
-        "top": "328",
+        "top": "336",
         "text": "Дозволити запускати кілька копій програми",
         "tip": "Якщо заборонено запуск кількох копій,\nпрограма автоматично перемикається на організацію,\nпередану в параметрах командного рядка.",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -292,7 +292,7 @@
       },
       "AllowLegacyDll": {
         "left": "30",
-        "top": "346",
+        "top": "354",
         "text": "Використовувати старі біліотеки (dll)",
         "tip": "Програма використовує старі dll для сумісності",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -332,7 +332,7 @@
       },
       "label8": {
         "left": "40",
-        "top": "390",
+        "top": "472",
         "width": "320",
         "height": "40",
         "text": "Увага! Відновлення системи скине налаштування користувача та видалить файли сертифікатів ЦЗО. Цю дію неможливо скасувати.",
@@ -343,6 +343,12 @@
         "left": "45",
         "top": "228",
         "text": "Розташування підказки:",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
+      },
+      "ZvitTooltipDelay": {
+        "left": "320",
+        "top": "228",
+        "text": "Затримка, мс:",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
       }
     },
@@ -356,12 +362,33 @@
         "style": "CBS_DROPDOWNLIST"
       },
       "styleTreeZvitTip": {
-        "left": "175",
+        "left": "176",
         "top": "224",
         "width": "130",
         "height": "25",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
-        "style": "CBS_DROPDOWNLIST"
+        "style": "CBS_DROPDOWNLIST",
+        "values": [
+          {"text": "Праворуч", "data": 0},
+          {"text": "По центру", "data": 2}
+        ],
+        "default": {
+          "value": "0",
+          "ini": "General.styleTreeZvitTip"
+        }
+      },
+      "ZvitTooltipDelay": {
+        "left": "400",
+        "top": "224",
+        "width": "90",
+        "height": "25",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "CBS_DROPDOWNLIST",
+        "values": "500|750|1000|1300|1500",
+        "default": {
+          "value": "1000",
+          "ini": "General.ZvitTooltipDelay"
+        }
       }
     },
     "buttons": {
@@ -390,8 +417,8 @@
         "onresize": "GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKSIZE"
       },
       "FixSystem": {
-        "left": "365",
-        "top": "402",
+        "left": "380",
+        "top": "482",
         "width": "120",
         "text": "Відновити систему",
         "tip": "Повертає стан системних файлів програми до початкового стану",
@@ -404,15 +431,15 @@
       "checkecp": {
         "left": "25",
         "top": "250",
-        "width": "482",
-        "height": "190",
+        "width": "498",
+        "height": "260",
         "onresize": "GUI_DOCKRIGHT+GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKBOTTOM",
         "style": "LVS_REPORT+LVS_SHOWSELALWAYS+LVS_NOSORTHEADER",
         "styleex": "LVS_EX_BORDERSELECT+LVS_EX_FULLROWSELECT+LVS_EX_GRIDLINES",
         "columns": {
           "0": {
             "title": "Термін дії",
-            "width": "120",
+            "width": "90",
             "align": "2"
           },
           "1": {
