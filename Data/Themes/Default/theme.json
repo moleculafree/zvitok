@@ -73,7 +73,7 @@
         "top": "65",
         "width": "486",
         "height": "80",
-        "text": "Налаштування параметрів проксі серверу",
+        "text": "Налаштування параметрів проксі сервера",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
       },
       "grpAuth": {
@@ -203,12 +203,13 @@
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.DirectDownload"
       },
-      "InfoFromCAOnly": {
+      "AllowLegacyFileDialog": {
         "left": "30",
         "top": "94",
-        "text": "Зчитувати інформацію лише з сертифікатів КНЕДП",
+        "text": "Використовувати старий діалог вибору файлів ключів",
+        "tip": "Звісно, ви можете увімкнути цей параметр, але стандартний діалог вибору файлів операційної системи є більш надійним .",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
-        "ini": "General.InfoFromCAOnly"
+        "ini": "Interface.AllowLegacyFileDialog"
       },
       "ExtractFromTickets": {
         "left": "30",
@@ -238,7 +239,7 @@
         "left": "30",
         "top": "166",
         "text": "Відображати назву КНЕДП в описі ЕЦП",
-        "tip": "Показувати більше інформації про ЕПЦ",
+        "tip": "Показувати більше інформації про ЕЦП",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.CSPNameInESign"
       },
@@ -253,16 +254,16 @@
       "TreeZvitTip": {
         "left": "30",
         "top": "202",
-        "text": "Відображати вспливаючу підказку в переліку звітів",
+        "text": "Відображати спливаючу підказку в переліку звітів",
         "tip": "Підказка містить назву файлу звіту",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
-        "ini": "General.ZvitTip"
+        "ini": "General.TreeZvitTip"
       },
       "DeleteSentReportsNoReceipt": {
         "left": "30",
         "top": "264",
         "text": "Дозволити видаляти надіслані звіти без квитанцій",
-        "tip": "Якщо звіт має статус 'Надісланий' та не має квітанції",
+        "tip": "Якщо звіт має статус 'Надісланий' та не має квитанції",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.DeleteSentReportsNoReceipt"
       },
@@ -270,7 +271,7 @@
         "left": "30",
         "top": "282",
         "text": "Альтернативна назва файлу квитанцій",
-        "tip": "Назва файлу складається з назви файлу звіту + номер квітанції,\nінакше використовується номер форми",
+        "tip": "Назва файлу складається з назви файлу звіту + номер квитанції,\nінакше використовується номер форми",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.AltReceiptName"
       },
@@ -293,10 +294,18 @@
       "AllowLegacyDll": {
         "left": "30",
         "top": "354",
-        "text": "Використовувати старі біліотеки (dll)",
+        "text": "Використовувати старі бібліотеки (dll)",
         "tip": "Програма використовує старі dll для сумісності",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.AllowLegacyDll"
+      },
+      "DebugLog": {
+        "left": "30",
+        "top": "372",
+        "text": "Увімкнути файл журналу поточної сесії",
+        "tip": "Створити детальний журнал дій для пошуку помилок.\nАвтоматично вимкнеться після закриття програми.",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.DebugLog"
       }
     },
     "labels": {
@@ -309,7 +318,7 @@
       "label2": {
         "left": "170",
         "top": "90",
-        "text": "Адреса проксі серверу:",
+        "text": "Адреса проксі сервера:",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
       },
       "label3": {
@@ -339,13 +348,13 @@
         "onresize": "GUI_DOCKLEFT+GUI_DOCKBOTTOM+GUI_DOCKHEIGHT+GUI_DOCKSIZE",
         "textcolor": "#a47e0a"
       },
-      "styleTreeZvitTip": {
+      "TreeZvitTipStyle": {
         "left": "45",
         "top": "228",
         "text": "Розташування підказки:",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
       },
-      "ZvitTooltipDelay": {
+      "TreeZvitTipDelay": {
         "left": "320",
         "top": "228",
         "text": "Затримка, мс:",
@@ -361,7 +370,7 @@
         "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
         "style": "CBS_DROPDOWNLIST"
       },
-      "styleTreeZvitTip": {
+      "TreeZvitTipStyle": {
         "left": "176",
         "top": "224",
         "width": "130",
@@ -374,10 +383,10 @@
         ],
         "default": {
           "value": "0",
-          "ini": "General.styleTreeZvitTip"
+          "ini": "General.TreeZvitTipStyle"
         }
       },
-      "ZvitTooltipDelay": {
+      "TreeZvitTipDelay": {
         "left": "400",
         "top": "224",
         "width": "90",
@@ -387,7 +396,7 @@
         "values": "500|750|1000|1300|1500",
         "default": {
           "value": "1000",
-          "ini": "General.ZvitTooltipDelay"
+          "ini": "General.TreeZvitTipDelay"
         }
       }
     },
@@ -975,23 +984,6 @@
         "height": "20",
         "left": "288",
         "top": "80",
-        "onresize": "GUI_DOCKRIGHT+GUI_DOCKBOTTOM+GUI_DOCKSIZE",
-        "icon": {
-          "name": "icon23",
-          "size": "16"
-        }
-      }
-    }
-  },
-  "keyreadpbform": {
-    "height": "150",
-    "width": "465",
-    "buttons": {
-      "passwordshow": {
-        "width": "20",
-        "height": "20",
-        "left": "234",
-        "top": "117",
         "onresize": "GUI_DOCKRIGHT+GUI_DOCKBOTTOM+GUI_DOCKSIZE",
         "icon": {
           "name": "icon23",
