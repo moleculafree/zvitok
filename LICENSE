@@ -18,3 +18,26 @@
 Якщо матеріали, компоненти, додатки чи частина програмного забеспечення має ліцензійні обмеження, будь ласка, дотримуйтесь їх.  У разі сумнівів — звертайтеся до офіційних розробників такого ПЗ.
 
 Ліцензія: MIT — програмне забезпечення надається "як є", без гарантій.
+
+Сторонні компоненти:
+
+SQLite
+https://sqlite.org/copyright.html
+
+Графічні зображення
+https://www.streamlinehq.com/icons/ultimate-colos-free
+Licensed under the Creative Commons - CC BY 4.0
+
+FO.NET
+https://github.com/nholik/FO.Net/blob/master/LICENSE
+
+XZip
+Freeware
+Belus Technology
+
+SumatraPDF
+GPL-3.0 license
+https://github.com/sumatrapdfreader/sumatrapdf
+
+Для роботи функцій КЕП використовується окремо встановлене кінцевим користувачем програмне забезпечення третіх сторін.
+Усі права на відповідні криптографічні бібліотеки належать їхнім правовласникам.
