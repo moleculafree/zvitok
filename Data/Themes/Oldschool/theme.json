@@ -91,7 +91,7 @@
       }
     }
   },
-    "gateform": {
+  "gateform": {
     "self": {
       "form": {
         "width": "500",
@@ -493,7 +493,7 @@
       }
     }
   },
-    "cryptoform": {
+  "cryptoform": {
     "self": {
       "form": {
         "width": "500",
@@ -789,7 +789,126 @@
       }
     }
   },
-    "settingsform": {
+  "componentaddform": {
+    "self": {
+      "form": {
+        "width": "600",
+        "height": "405"
+      }
+    },
+    "groups": {
+      "grpGate": {
+        "left": "15",
+        "top": "5",
+        "width": "560",
+        "height": "75",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
+      },
+      "grpMailbox": {
+        "left": "15",
+        "top": "85",
+        "width": "560",
+        "height": "150",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
+      },
+      "grpCrypto": {
+        "left": "15",
+        "top": "240",
+        "width": "560",
+        "height": "80",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
+      }
+    },
+    "labels": {
+      "reporting": {
+        "left": "145",
+        "top": "25",
+        "width": "420",
+        "height": "46",
+        "text": "Звітність.\nСистемний обліковий запис із параметрами, що використовуються для зв'язку з сервером звітності.",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
+      },
+      "mailbox": {
+        "left": "145",
+        "top": "105",
+        "width": "420",
+        "height": "46",
+        "text": "Системна поштова скринька.\nМістить адресу електронної пошти та параметри підключення до поштового сервера для обміну повідомленняим.",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
+      },
+      "import": {
+        "left": "145",
+        "top": "180",
+        "width": "420",
+        "height": "46",
+        "text": "Імпорт налаштувань поштової скриньки.\nЯкщо поточний файл даних організації містить налаштування поштової скриньки, їх можна імпортувати до довідника зв'язків.",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
+      },
+      "crypto": {
+        "left": "145",
+        "top": "265",
+        "width": "420",
+        "height": "46",
+        "text": "Кріптографічний провайдер.\nЗовнішній модуль роботи з ключами та сертифікатами.",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
+      }
+    },
+    "buttons": {
+      "reporting": {
+        "left": "30",
+        "top": "18",
+        "width": "100",
+        "height": "54",
+        "icon": {
+          "name": "icon29",
+          "size": "32"
+        },
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
+      },
+      "mailbox": {
+        "left": "30",
+        "top": "98",
+        "width": "100",
+        "height": "54",
+        "icon": {
+          "name": "icon30",
+          "size": "32"
+        },
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
+      },
+      "import": {
+        "left": "30",
+        "top": "170",
+        "width": "100",
+        "height": "54",
+        "icon": {
+          "name": "icon31",
+          "size": "32"
+        },
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
+      },
+      "crypto": {
+        "left": "30",
+        "top": "255",
+        "width": "100",
+        "height": "54",
+        "icon": {
+          "name": "icon32",
+          "size": "32"
+        },
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
+      },
+      "cancel": {
+        "left": "475",
+        "top": "330",
+        "width": "100",
+        "height": "30",
+        "text": "Скасувати",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKBOTTOM+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
+      }
+    }
+  },
+  "settingsform": {
     "self": {
       "form": {
         "width": "560",
@@ -1421,7 +1540,7 @@
       }
     }
   },
-    "selectform": {
+  "selectform": {
     "self": {
       "form": {
         "width": "400",
@@ -1491,7 +1610,7 @@
       }
     }
   },
-    "custom": {
+  "custom": {
     "self": {
       "form": {
         "height": "300",
@@ -1529,7 +1648,7 @@
       }
     }
   },
-    "mainform": {
+  "mainform": {
     "self": {
       "form": {
         "width": "440",
@@ -1881,36 +2000,36 @@
           }
         },
         "status": {
-            "title": {
-              "0": "Надісланий",
-              "1": "Надісланий",
-              "2": "Надісланий",
-              "99999999": "Отриманий",
-              "new": "Імпортований",
-              "approved": "Прийнятий",
-              "error": "Помилковий"
-            },
-            "colors": {
-              "bg": {
-                "ticket": {
-                  "0": "#00FF00",
-                  "1": "#FF6600",
-                  "2": "#00FFFF"
-                },
-                "zvit": {
-                  "0": "#FFFF00",
-                  "1": "#FFFF00",
-                  "2": "#FFFF00",
-                  "3": "#00FF00",
-                  "new": "#F0F0F0",
-                  "error": "#FF6600",
-                  "beyond": "#00BC00"
-                }
+          "title": {
+            "0": "Надісланий",
+            "1": "Надісланий",
+            "2": "Надісланий",
+            "99999999": "Отриманий",
+            "new": "Імпортований",
+            "approved": "Прийнятий",
+            "error": "Помилковий"
+          },
+          "colors": {
+            "bg": {
+              "ticket": {
+                "0": "#00FF00",
+                "1": "#FF6600",
+                "2": "#00FFFF"
+              },
+              "zvit": {
+                "0": "#FFFF00",
+                "1": "#FFFF00",
+                "2": "#FFFF00",
+                "3": "#00FF00",
+                "new": "#F0F0F0",
+                "error": "#FF6600",
+                "beyond": "#00BC00"
               }
             }
-          },
+          }
+        },
         "stan": {
-          "XML":{
+          "XML": {
             "title": {
               "1": "Звітний",
               "2": "Новий звітний",
@@ -1918,7 +2037,7 @@
               "undefined": "Невідомий"
             }
           },
-          "PFZ":{
+          "PFZ": {
             "title": {
               "1": "Початковий",
               "2": "Додатковий",
@@ -1957,7 +2076,7 @@
       }
     }
   },
-    "importform": {
+  "importform": {
     "self": {
       "form": {
         "width": "640",
