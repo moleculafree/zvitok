@@ -1047,7 +1047,7 @@
       },
       "grpFix": {
         "left": "25",
-        "top": "198",
+        "top": "368",
         "width": "500",
         "height": "85",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP"
@@ -1173,6 +1173,14 @@
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.DeleteFilesToRecycleBin"
       },
+      "promptMailboxImport": {
+        "left": "30",
+        "top": "190",
+        "text": "Пропонувати імпорт налаштувань поштової скриньки",
+        "tip": "Запитати, коли знайдено налаштування поштової скриньки в файлі профіля организації",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.promptMailboxImport"
+      },
       "CSPNameInESign": {
         "left": "30",
         "top": "40",
@@ -1287,7 +1295,7 @@
       },
       "label8": {
         "left": "40",
-        "top": "216",
+        "top": "386",
         "width": "320",
         "height": "40",
         "text": "Увага! Це скине налаштування користувача та видалить файли сертифікатів ЦЗО.\nЦю дію неможливо скасувати.",
@@ -1416,7 +1424,7 @@
       },
       "FixSystem": {
         "left": "382",
-        "top": "228",
+        "top": "398",
         "width": "120",
         "text": "Відновити параметри",
         "tip": "Повертає стан системних файлів програми до початкового стану (інсталяції)",
