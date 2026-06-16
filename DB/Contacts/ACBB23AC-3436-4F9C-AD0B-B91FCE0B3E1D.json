@@ -1,0 +1,13 @@
+{
+    "cert": "",
+    "title": "Шлюз ДCC України",
+    "name": "Державна служба статистики України",
+    "email": "elzvit@ukrstat.gov.ua",
+    "comment": "Нові сертифікати ДПС публікує на сайті https:\/\/tax.gov.ua\/elektronna-zvitnist\/platnikam-podatkiv-pro\/edina-adresa\/",
+    "category": "1",
+    "pszSerial": "2DB6710700000000000000000000000000000001",
+    "pszIssuer": "O=ТОВ \"Центр сертифікації ключів \"Україна\";CN=КНЕДП ТОВ \"Центр сертифікації ключів \"Україна\";Serial=UA-36865753-2101;C=UA;L=Київ",
+    "gate": "http:\/\/zvitdirect.ukrstat.gov.ua\/websrv\/gate.asmx",
+    "created": "2026\/06\/04 19:57:31",
+    "modified": "2026\/06\/04 19:57:31"
+}

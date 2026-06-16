@@ -1,0 +1,14 @@
+{
+    "site": "https:\/\/tax.gov.ua\/elektronna-zvitnist\/platnikam-podatkiv-pro\/edina-adresa\/",
+    "cert": "3FAA9288358EC00304000000995A2C005DDFE600.cer",
+    "title": "Шлюз ДПС України",
+    "name": "Державна податкова служба України. \"ОТРИМАНО\"",
+    "email": "zvit@sta.gov.ua",
+    "comment": "Нові сертифікати ДПС публікує на сайті https:\/\/tax.gov.ua\/elektronna-zvitnist\/platnikam-podatkiv-pro\/edina-adresa\/",
+    "category": "1",
+    "pszSerial": "3FAA9288358EC00304000000995A2C005DDFE600",
+    "pszIssuer": "O=Державна податкова служба України;CN=КНЕДП ДПС;Serial=UA-43005393-0522;C=UA;L=Київ;OI=NTRUA-43005393",
+    "gate": "http:\/\/soap.tax.gov.ua\/WebSrvGate\/gate.asmx",
+    "created": "2026\/06\/05 13:10:41",
+    "modified": "2026\/06\/05 13:10:41"
+}
