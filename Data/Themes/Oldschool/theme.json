@@ -657,7 +657,7 @@
         "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKBOTTOM"
       },
       "save": {
-        "left": "230",
+        "left": "250",
         "top": "315",
         "width": "100",
         "height": "25",
@@ -687,34 +687,13 @@
     "self": {
       "form": {
         "width": "600",
-        "height": "480"
+        "height": "160"
       }
     },
     "groups": {
       "grpMain": {
         "left": "15",
-        "top": "15",
-        "width": "560",
-        "height": "75",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
-      },
-      "grpGate": {
-        "left": "15",
-        "top": "95",
-        "width": "560",
-        "height": "75",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
-      },
-      "grpMailbox": {
-        "left": "15",
-        "top": "175",
-        "width": "560",
-        "height": "150",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
-      },
-      "grpCrypto": {
-        "left": "15",
-        "top": "330",
+        "top": "5",
         "width": "560",
         "height": "75",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
@@ -723,49 +702,17 @@
     "labels": {
       "contact": {
         "left": "145",
-        "top": "40",
+        "top": "30",
         "width": "420",
         "height": "46",
         "text": "Контакт.\nМістить ПІБ та електрону адресу контрагента.",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
-      },
-      "reporting": {
-        "left": "145",
-        "top": "120",
-        "width": "420",
-        "height": "46",
-        "text": "Звітність.\nСистемний обліковий запис із параметрами, що викорисовуються для зв'язку з сервером звітності.",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
-      },
-      "mailbox": {
-        "left": "145",
-        "top": "200",
-        "width": "420",
-        "height": "46",
-        "text": "Системна поштова скринька.\nМістить адресу електронної пошти та параметри підключення до поштового сервера для обміну повідомленняим.",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
-      },
-      "import": {
-        "left": "145",
-        "top": "266",
-        "width": "420",
-        "height": "46",
-        "text": "Імпорт налаштувань поштової скриньки зі старого формату.\nСтарі налаштування поштової скриньки буде автоматично конвертовано в Компоненти та застосовано до поточної організації",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
-      },
-      "crypto": {
-        "left": "145",
-        "top": "348",
-        "width": "420",
-        "height": "46",
-        "text": "Кріптографічний провайдер.\nЗовнішній модуль роботи з ключами та сертифікатами.",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
       }
     },
     "buttons": {
       "contact": {
         "left": "30",
-        "top": "28",
+        "top": "18",
         "width": "100",
         "height": "54",
         "icon": {
@@ -774,53 +721,9 @@
         },
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
       },
-      "reporting": {
-        "left": "30",
-        "top": "108",
-        "width": "100",
-        "height": "54",
-        "icon": {
-          "name": "icon29",
-          "size": "32"
-        },
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
-      },
-      "mailbox": {
-        "left": "30",
-        "top": "190",
-        "width": "100",
-        "height": "54",
-        "icon": {
-          "name": "icon30",
-          "size": "32"
-        },
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
-      },
-      "import": {
-        "left": "30",
-        "top": "259",
-        "width": "100",
-        "height": "54",
-        "icon": {
-          "name": "icon31",
-          "size": "32"
-        },
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
-      },
-      "crypto": {
-        "left": "30",
-        "top": "340",
-        "width": "100",
-        "height": "54",
-        "icon": {
-          "name": "icon32",
-          "size": "32"
-        },
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
-      },
       "cancel": {
         "left": "475",
-        "top": "413",
+        "top": "90",
         "width": "100",
         "height": "30",
         "text": "Скасувати",
@@ -832,7 +735,7 @@
     "self": {
       "form": {
         "width": "600",
-        "height": "405"
+        "height": "485"
       }
     },
     "groups": {
@@ -853,6 +756,13 @@
       "grpCrypto": {
         "left": "15",
         "top": "240",
+        "width": "560",
+        "height": "80",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
+      },
+      "grpProxy": {
+        "left": "15",
+        "top": "325",
         "width": "560",
         "height": "80",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
@@ -889,6 +799,14 @@
         "width": "420",
         "height": "46",
         "text": "Кріптографічний провайдер.\nЗовнішній модуль роботи з ключами та сертифікатами.",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
+      },
+      "proxy": {
+        "left": "145",
+        "top": "355",
+        "width": "420",
+        "height": "46",
+        "text": "Проксі-сервер.\nНалатшування для використання проксі-сервера.",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
       }
     },
@@ -937,13 +855,156 @@
         },
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
       },
+      "proxy": {
+        "left": "30",
+        "top": "340",
+        "width": "100",
+        "height": "54",
+        "icon": {
+          "name": "icon33",
+          "size": "32"
+        },
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
+      },
       "cancel": {
         "left": "475",
-        "top": "330",
+        "top": "415",
         "width": "100",
         "height": "30",
         "text": "Скасувати",
         "onresize": "GUI_DOCKRIGHT+GUI_DOCKBOTTOM+GUI_DOCKWIDTH+GUI_DOCKHEIGHT"
+      }
+    }
+  },
+  "proxyform": {
+    "self": {
+      "form": {
+        "width": "470",
+        "height": "240"
+      }
+    },
+    "groups": {
+      "grpAuth": {
+        "left": "20",
+        "top": "85",
+        "width": "425",
+        "height": "75",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
+      }
+    },
+    "labels": {
+      "host": {
+        "left": "20",
+        "top": "22",
+        "text": "Адреса проксі серверу:",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
+      },
+      "port": {
+        "left": "340",
+        "top": "22",
+        "text": "Порт:",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
+      },
+      "protocol": {
+        "left": "52",
+        "top": "48",
+        "text": "Протокол проксі:",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
+      },
+      "user": {
+        "left": "40",
+        "top": "110",
+        "text": "Ім'я користувача:",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
+      },
+      "password": {
+        "left": "210",
+        "top": "110",
+        "text": "Пароль:",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
+      }
+    },
+    "buttons": {
+      "test": {
+        "left": "35",
+        "top": "175",
+        "width": "145",
+        "height": "25",
+        "text": "Перевірка підключення",
+        "o1nresize": "GUI_DOCKLEFT+GUI_DOCKSIZE"
+      },
+      "save": {
+        "left": "260",
+        "top": "175",
+        "width": "80",
+        "height": "25",
+        "text": "Зберегти",
+        "o1nresize": "GUI_DOCKLEFT+GUI_DOCKSIZE"
+      },
+      "cancel": {
+        "left": "355",
+        "top": "175",
+        "width": "90",
+        "height": "25",
+        "text": "Скасувати",
+        "o1nresize": "GUI_DOCKLEFT+GUI_DOCKSIZE"
+      }
+    },
+    "inputs": {
+      "host": {
+        "left": "155",
+        "top": "18",
+        "width": "170",
+        "height": "21",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "ES_LEFT+ES_AUTOHSCROLL",
+        "tip": "Вказується IP адреса або назва DNS-ім'я серверу"
+      },
+      "port": {
+        "left": "380",
+        "top": "18",
+        "width": "50",
+        "height": "21",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "ES_LEFT+ES_AUTOHSCROLL"
+      },
+      "user": {
+        "left": "40",
+        "top": "125",
+        "width": "150",
+        "height": "21",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "ES_LEFT+ES_AUTOHSCROLL"
+      },
+      "password": {
+        "left": "210",
+        "top": "125",
+        "width": "150",
+        "height": "21",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "ES_LEFT+ES_AUTOHSCROLL+ES_PASSWORD"
+      }
+    },
+    "combo": {
+      "protocol": {
+        "left": "155",
+        "top": "48",
+        "width": "90",
+        "height": "25",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "CBS_DROPDOWNLIST+WS_DISABLED",
+        "values": "HTTP",
+        "default": {
+          "value": "HTTP"
+        }
+      }
+    },
+    "checkbox": {
+      "auth": {
+        "left": "25",
+        "top": "80",
+        "text": "Аутентифікація на проксі сервері",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
       }
     }
   },
@@ -967,39 +1028,6 @@
       }
     },
     "inputs": {
-      "proxyhost": {
-        "left": "170",
-        "top": "105",
-        "width": "240",
-        "height": "21",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
-        "style": "ES_LEFT+ES_AUTOHSCROLL",
-        "tip": "Вказується IP адреса або назва DNS-ім'я серверу"
-      },
-      "proxyport": {
-        "left": "420",
-        "top": "105",
-        "width": "50",
-        "height": "21",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
-        "style": "ES_LEFT+ES_AUTOHSCROLL"
-      },
-      "proxyuser": {
-        "left": "100",
-        "top": "200",
-        "width": "150",
-        "height": "21",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
-        "style": "ES_LEFT+ES_AUTOHSCROLL"
-      },
-      "proxypassword": {
-        "left": "270",
-        "top": "200",
-        "width": "150",
-        "height": "21",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
-        "style": "ES_LEFT+ES_AUTOHSCROLL+ES_PASSWORD"
-      },
       "checkecpdays": {
         "left": "430",
         "top": "75",
@@ -1020,7 +1048,7 @@
       },
       "dfsProvider": {
         "left": "170",
-        "top": "176",
+        "top": "216",
         "width": "306",
         "height": "20",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
@@ -1029,12 +1057,21 @@
       },
       "dssProvider": {
         "left": "170",
-        "top": "206",
+        "top": "246",
         "width": "306",
         "height": "20",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
         "style": "ES_LEFT+ES_AUTOHSCROLL",
         "tip": "Провайдер звітності ДСС"
+      },
+      "proxyProvider": {
+        "left": "186",
+        "top": "48",
+        "width": "270",
+        "height": "20",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "ES_LEFT+ES_AUTOHSCROLL+WS_DISABLED",
+        "tip": "Найменування набору налаштувань проксі-сервера"
       }
     },
     "groups": {
@@ -1043,14 +1080,6 @@
         "top": "45",
         "width": "496",
         "height": "170",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
-      },
-      "grpProxy": {
-        "left": "25",
-        "top": "65",
-        "width": "486",
-        "height": "80",
-        "text": "Налаштування параметрів проксі серверу",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKHEIGHT"
       },
       "grpAuth": {
@@ -1087,24 +1116,12 @@
       "grpFix": {
         "left": "25",
         "top": "368",
-        "width": "500",
-        "height": "85",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP"
+        "width": "494",
+        "height": "75",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKRIGHT+GUI_DOCKHEIGHT"
       }
     },
     "checkbox": {
-      "useproxy": {
-        "left": "35",
-        "top": "40",
-        "text": "Використовувати проксі сервер",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
-      },
-      "proxyauth": {
-        "left": "45",
-        "top": "157",
-        "text": "Аутентифікація на проксі сервері",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
-      },
       "checkecp": {
         "left": "35",
         "top": "40",
@@ -1199,16 +1216,16 @@
       "DebugLog": {
         "left": "30",
         "top": "150",
-        "text": "Увімкнути файл журналу поточної сесії",
-        "tip": "Створити детальний журнал дій для пошуку помилок.\nАвтоматично вимкнеться після закриття програми.",
+        "text": "Увімкнути файл діагностики поточної сесії",
+        "tip": "Створити детальний опис дій роботи для пошуку помилок.\nАвтоматично вимкнеться після закриття програми.",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.DebugLog"
       },
       "DeleteFilesToRecycleBin": {
         "left": "30",
         "top": "170",
-        "text": "Використовувати Кошик Windows для важливих файлів",
-        "tip": "Замість миттєвого видалення важливих файлів, переміщувати їх до Кошика Windows",
+        "text": "Використовувати Кошик Windows для важливих файлів (профіль, тощо)",
+        "tip": "Замість миттєвого видалення файлів, переміщувати їх до Кошика Windows",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.DeleteFilesToRecycleBin"
       },
@@ -1284,17 +1301,33 @@
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.DeleteSentReportsNoReceipt"
       },
-      "AltReceiptName": {
+      "DeleteReports": {
         "left": "30",
         "top": "130",
-        "text": "Альтернативна назва файлу квитанцій для експорта",
+        "text": "Дозволити видаляти звіти з будь-яким статусом",
+        "tip": "Якщо цей прапорець встановлений програма не блокує кнопку 'Видалення' взагалі.\nВидалений звіт можна спробувати відновити через Журнал",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.DeleteReports"
+      },
+      "AltReceiptName": {
+        "left": "30",
+        "top": "150",
+        "text": "Альтернативна назва файлу квитанцій для друку",
         "tip": "Назва файлу складається з назви файлу звіту + номер квитанції,\nінакше використовується номер форми",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "ini": "General.AltReceiptName"
       },
+      "MultiPDF": {
+        "left": "30",
+        "top": "170",
+        "text": "Відкривати кілька друкованих форм одночасно",
+        "tip": "Дозволяє одночасно працювати з кількома друкованими формами.\nЯкщо PDF файл вже відкритий у програмі просмотра, його вміст може не оновитися.\nВ такому випадку перевірте налаштування програми просмотра або зніміть цей прапорець.",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "ini": "General.MultiPDF"
+      },
       "IMAPNoDeleteReadEmails": {
         "left": "30",
-        "top": "150",
+        "top": "190",
         "text": "Не видаляти вхідні листи з поштової скриньки",
         "tip": "Після обробки квитанції вхдіний лист маркується як Прочитаний та залишається в скриньці.\nПрацює лише для IMAP протоколу та активованій в профілі опції 'Власна поштова сринька'.",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
@@ -1302,36 +1335,6 @@
       }
     },
     "labels": {
-      "label1": {
-        "left": "45",
-        "top": "90",
-        "text": "Протокол проксі:",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
-      },
-      "label2": {
-        "left": "170",
-        "top": "90",
-        "text": "Адреса проксі серверу:",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
-      },
-      "label3": {
-        "left": "420",
-        "top": "90",
-        "text": "Порт:",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
-      },
-      "label4": {
-        "left": "100",
-        "top": "185",
-        "text": "Ім'я користувача:",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
-      },
-      "label5": {
-        "left": "270",
-        "top": "185",
-        "text": "Пароль:",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
-      },
       "label8": {
         "left": "40",
         "top": "386",
@@ -1369,28 +1372,27 @@
       },
       "dfsProvider": {
         "left": "30",
-        "top": "180",
+        "top": "220",
         "text": "Провайдер звітності ДПС",
         "tip": "Параметри налаштування передачі звітності до ДПС",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
       },
       "dssProvider": {
         "left": "30",
-        "top": "210",
+        "top": "250",
         "text": "Провайдер звітності ДСС",
         "tip": "Параметри налаштування передачі звітності до ДСС",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "proxyProvider": {
+        "left": "20",
+        "top": "50",
+        "text": "Налаштування проксі-сервера",
+        "tip": "Параметри налаштування проксі-сервера",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
       }
     },
     "combo": {
-      "proxyprotocol": {
-        "left": "45",
-        "top": "105",
-        "width": "90",
-        "height": "25",
-        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
-        "style": "CBS_DROPDOWNLIST"
-      },
       "TreeZvitTipStyle": {
         "left": "176",
         "top": "62",
@@ -1437,22 +1439,6 @@
       }
     },
     "buttons": {
-      "proxytest": {
-        "left": "100",
-        "top": "255",
-        "width": "150",
-        "height": "25",
-        "text": "Перевірка підключення",
-        "o1nresize": "GUI_DOCKLEFT+GUI_DOCKSIZE"
-      },
-      "proxysave": {
-        "left": "270",
-        "top": "255",
-        "width": "150",
-        "height": "25",
-        "text": "Використовувати прокси",
-        "o1nresize": "GUI_DOCKLEFT+GUI_DOCKSIZE"
-      },
       "checkecpsave": {
         "left": "215",
         "top": "180",
@@ -1512,7 +1498,7 @@
       },
       "selectdfsprovider": {
         "left": "475",
-        "top": "175",
+        "top": "215",
         "width": "25",
         "height": "22",
         "text": "...",
@@ -1521,12 +1507,30 @@
       },
       "selectdssprovider": {
         "left": "475",
-        "top": "205",
+        "top": "245",
         "width": "25",
         "height": "22",
         "text": "...",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "tip": "Вибрати налаштування провайдера звітності ДСС з довідника"
+      },
+      "selectproxy": {
+        "left": "477",
+        "top": "47",
+        "width": "25",
+        "height": "22",
+        "text": "...",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "tip": "Вибрати налаштування проксі-сервера з довідника"
+      },
+      "clearproxy": {
+        "left": "455",
+        "top": "47",
+        "width": "25",
+        "height": "22",
+        "text": "x",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "tip": "Очистити вибір"
       }
     },
     "listview": {
@@ -1616,7 +1620,7 @@
           "lvStatus": {
             "title": "Дані",
             "width": "245",
-            "align": "1",
+            "align": "0",
             "fixed": false
           }
         }
@@ -1729,10 +1733,22 @@
       "form": {
         "width": "440",
         "height": "392",
-        "minwidth": "440",
+        "minwidth": "680",
         "minheight": "392"
       },
       "isResizable": true
+    },
+    "spinner": {
+      "frames": [
+        "□□□□□",
+        "■□□□□",
+        "■■□□□",
+        "■■■□□",
+        "□■■■□",
+        "□□■■■",
+        "□□□■■",
+        "□□□□■"
+      ]
     },
     "tabs": {
       "main": {
@@ -1754,16 +1770,22 @@
     },
     "labels": {
       "filterLabel1": {
-        "left": "16",
-        "top": "92",
+        "left": "20",
+        "top": "95",
         "text": "Імпортовані/надіслані протягом ",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
       },
       "filterLabel2": {
         "left": "270",
-        "top": "92",
+        "top": "95",
         "text": "до ",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "filterLog": {
+        "left": "19",
+        "top": "94",
+        "text": "Період ",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKHEIGHT+GUI_DOCKSIZE"
       }
     },
     "groups": {
@@ -1790,13 +1812,21 @@
         "height": "184",
         "text": "Звіти та квитанції: ",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKBOTTOM"
+      },
+      "grpJournal": {
+        "left": "12",
+        "top": "116",
+        "width": "400",
+        "height": "184",
+        "text": "Перелік подій: ",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKBOTTOM"
       }
     },
     "date": {
       "date": {
         "width": "78",
         "left": "295",
-        "top": "90",
+        "top": "92",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "style": "DTS_SHORTDATEFORMAT",
         "format": "dd.MM.yyyy"
@@ -1814,8 +1844,8 @@
       "period": {
         "width": "70",
         "height": "25",
-        "left": "186",
-        "top": "90",
+        "left": "189",
+        "top": "92",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "style": "CBS_DROPDOWNLIST+CBS_AUTOHSCROLL",
         "values": [
@@ -1842,6 +1872,36 @@
         ],
         "default": {
           "value": "-1m"
+        }
+      },
+      "logPeriod": {
+        "width": "90",
+        "height": "25",
+        "left": "66",
+        "top": "90",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "style": "CBS_DROPDOWNLIST+CBS_AUTOHSCROLL",
+        "values": [
+          {
+            "text": "Сьогодні",
+            "data": "-0d"
+          },
+          {
+            "text": "Тиждень",
+            "data": "-7d"
+          },
+          {
+            "text": "Місяць",
+            "data": "-1m"
+          },
+          {
+            "text": "3 місяця",
+            "data": "-3m"
+          }
+        ],
+        "default": {
+          "value": "-0d",
+          "ini": "General.JournalPeriod"
         }
       }
     },
@@ -1900,7 +1960,7 @@
         "width": "90",
         "height": "24",
         "left": "380",
-        "top": "88",
+        "top": "90",
         "icon": {
           "name": "refresh",
           "size": "18"
@@ -1914,7 +1974,7 @@
       "xlmadd": {
         "width": "36",
         "height": "35",
-        "left": "16",
+        "left": "20",
         "top": "136",
         "icon": {
           "name": "icon6",
@@ -1926,7 +1986,7 @@
       "xlmexport": {
         "width": "36",
         "height": "35",
-        "left": "54",
+        "left": "58",
         "top": "136",
         "icon": {
           "name": "icon7",
@@ -1938,7 +1998,7 @@
       "xlmdel": {
         "width": "36",
         "height": "35",
-        "left": "92",
+        "left": "96",
         "top": "136",
         "icon": {
           "name": "icon8",
@@ -1951,7 +2011,7 @@
         "width": "36",
         "height": "35",
         "left": "335",
-        "top": "84",
+        "top": "136",
         "icon": {
           "name": "send",
           "size": "32"
@@ -1963,7 +2023,7 @@
         "width": "36",
         "height": "35",
         "left": "373",
-        "top": "84",
+        "top": "136",
         "icon": {
           "name": "receive",
           "size": "32"
@@ -2031,6 +2091,66 @@
         },
         "tip": "Видалити контакт",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "journalReport": {
+        "width": "36",
+        "height": "35",
+        "left": "242",
+        "top": "136",
+        "icon": {
+          "name": "journal",
+          "size": "32"
+        },
+        "tip": "Переглянути журнал документа (права кнопка миші)",
+        "onresize": "GUI_DOCKHCENTER+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "journalPrint": {
+        "width": "32",
+        "height": "32",
+        "left": "20",
+        "top": "136",
+        "icon": {
+          "name": "print",
+          "size": "28"
+        },
+        "tip": "Перегляд/друк документів",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "journalRestore": {
+        "width": "32",
+        "height": "32",
+        "left": "62",
+        "top": "136",
+        "icon": {
+          "name": "restore",
+          "size": "28"
+        },
+        "tip": "Відновлення запису",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "zvitSearch": {
+        "width": "24",
+        "height": "24",
+        "left": "380",
+        "top": "90",
+        "icon": {
+          "name": "search",
+          "size": "16"
+        },
+        "tip": "Пошук документів",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "hotkey": "{ENTER}"
+      }
+    },
+    "inputs": {
+      "zvitSearch": {
+        "left": "250",
+        "top": "92",
+        "width": "128",
+        "height": "20",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "ES_LEFT",
+        "tip": "введіть назву файла або документу"
       }
     },
     "listview": {
@@ -2147,6 +2267,89 @@
             "width": "230",
             "align": "0",
             "fixed": false
+          }
+        }
+      },
+      "journal": {
+        "left": "12",
+        "top": "175",
+        "width": "400",
+        "height": "124",
+        "onresize": "GUI_DOCKRIGHT+GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKBOTTOM",
+        "style": "LVS_REPORT+LVS_SHOWSELALWAYS+LVS_SINGLESEL",
+        "styleex": "LVS_EX_BORDERSELECT+LVS_EX_FULLROWSELECT+LVS_EX_GRIDLINES+LVS_EX_DOUBLEBUFFER",
+        "columns": {
+          "lvDate": {
+            "title": "Дата",
+            "width": "90",
+            "align": "2"
+          },
+          "lvEvent": {
+            "title": "Подія",
+            "width": "90",
+            "align": "0"
+          },
+          "lvStatus": {
+            "title": "Статус",
+            "width": "110",
+            "align": "0"
+          },
+          "lvFilename": {
+            "title": "Об'єкт",
+            "width": "300",
+            "align": "0"
+          },
+          "lvMessage": {
+            "title": "Опис",
+            "width": "300",
+            "align": "0",
+            "fixed": false
+          }
+        },
+        "status": {
+          "title": {
+            "sent": "Надіслано",
+            "send": "Відправлення",
+            "receive": "Отримання",
+            "error_send": "Помилка надсилання",
+            "error_direct_parse_sign": "Помилка перевірки КЕП",
+            "error_get_messages": "Помилка отримання списку квитанцій",
+            "ticket_received": "Отримано квитанцію",
+            "ticket_decoded": "Розшифровано квитанцію",
+            "error_ticket_receive": "Помилка отримання квитанції",
+            "error_decode": "Помилка декодування",
+            "cert_extracted": "Отримано з квитанції сертифікат",
+            "error_connection": "Помилка зв'язку",
+            "success": "Успішно",
+            "error": "Помилка",
+            "email": "Електронна пошта",
+            "direct": "Шлюз",
+            "migration": "Конвертація файла бази даних",
+            "delete": "Видалення",
+            "restore": "Відновлення",
+            "import": "Імпортування"
+          },
+          "colors": {
+            "bg": {
+              "default": "#d8e0ef",
+              "delete": "#aaaaaa",
+              "restore": {
+                "success": "#30ff9f"
+              },
+              "error_decode": "#ff9e9e",
+              "error_connection": "#ff9e9e",
+              "error_send": "#ff9e9e",
+              "send": "#FFFF00",
+              "import": "#F0F0F0"
+            },
+            "text": {
+              "receive": {
+                "error_connection": "#f7f00f"
+              },
+              "send": {
+                "error_connection": "#f7f00f"
+              }
+            }
           }
         }
       }
@@ -2530,6 +2733,18 @@
     },
     "icon32": {
       "file": "CryptProvider.ico"
+    },
+    "icon33": {
+      "file": "Proxy.ico"
+    },
+    "journal": {
+      "file": "Stats.ico"
+    },
+    "restore": {
+      "file": "Restore.ico"
+    },
+    "search": {
+      "file": "Search.ico"
     }
   },
   "colors": {

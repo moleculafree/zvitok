@@ -1,0 +1,26 @@
+CREATE TABLE IF NOT EXISTS ZVIT
+(
+    NAME   TEXT     NOT NULL,
+    TIME   DATETIME NOT NULL,
+    PERIOD TEXT (6),
+    DATA   TEXT     NOT NULL,
+    PARENT TEXT,
+    STATUS TEXT
+);
+
+CREATE TABLE IF NOT EXISTS "KEY"
+(
+    Kod       TEXT(10)   NOT NULL,
+    DRFO      TEXT(10),
+    Sign      NUMERIC(1) NOT NULL,
+    "Key"     BLOB       NOT NULL,
+    CertSign  BLOB,
+    CertCrypt BLOB,
+    Info      TEXT
+);
+
+CREATE TABLE IF NOT EXISTS SETTINGS
+(
+    NAME  TEXT,
+    VALUE TEXT
+);
