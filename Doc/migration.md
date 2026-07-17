@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Міграція](#%D0%9C%D1%96%D0%B3%D1%80%D0%B0%D1%86%D1%96%D1%8F)
+  - [Версії та скрипти міграції](#%D0%92%D0%B5%D1%80%D1%81%D1%96%D1%97-%D1%82%D0%B0-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B8-%D0%BC%D1%96%D0%B3%D1%80%D0%B0%D1%86%D1%96%D1%97)
+    - [Номер версії міграції](#%D0%9D%D0%BE%D0%BC%D0%B5%D1%80-%D0%B2%D0%B5%D1%80%D1%81%D1%96%D1%97-%D0%BC%D1%96%D0%B3%D1%80%D0%B0%D1%86%D1%96%D1%97)
+    - [Скрипти міграції](#%D0%A1%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B8-%D0%BC%D1%96%D0%B3%D1%80%D0%B0%D1%86%D1%96%D1%97)
+    - [Архівні копії файлів баз](#%D0%90%D1%80%D1%85%D1%96%D0%B2%D0%BD%D1%96-%D0%BA%D0%BE%D0%BF%D1%96%D1%97-%D1%84%D0%B0%D0%B9%D0%BB%D1%96%D0%B2-%D0%B1%D0%B0%D0%B7)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Міграція
 > [!NOTE]
 > Поточна публічна версія програми може не повністю підтримувати або збігатися з описом у цьому файлі.
