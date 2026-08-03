@@ -134,6 +134,9 @@ https://github.com/nholik/FO.Net/blob/master/LICENSE
 Freeware
 Belus Technology
 
+**7-Zip**
+https://www.7-zip.org/license.txt
+
 **SumatraPDF**
 GPL-3.0
 https://github.com/sumatrapdfreader/sumatrapdf

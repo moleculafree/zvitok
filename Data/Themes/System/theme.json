@@ -36,7 +36,7 @@
         "●   ○ ",
         "●    ○"
       ],
-      "ignorethisframes2": [
+      "frames2": [
         "`·.¸¸.·´¯`·.¸><((º>",
         ".¸¸.·´¯`·.¸¸ ><((º>",
         "¸¸.·´¯`·.¸¸.·><((º>",
@@ -64,8 +64,8 @@
       "usedirectaccess": {
         "left": "30",
         "top": "90",
-        "text": "Використовувати пряме з'єднання з серверами звітності",
-        "tip": "Звіти (документи) передаються та отримуються через відповідний шлюз компоненти Звітність, без використання поштової скриньки",
+        "text": "Використовувати пряме з'єднання зі шлюзом звітності",
+        "tip": "Звіти (документи) передаються та отримуються через відповідний шлюз компоненти Звітність",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
       },
       "usecontactmail": {
@@ -73,6 +73,13 @@
         "top": "112",
         "text": "Використовувати поштову скриньку",
         "tip": "Обмін файлами відбувається за допомогою електроної пошти, яка вказана в налаштуваннях",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
+      "useapiaccess": {
+        "left": "30",
+        "top": "134",
+        "text": "Використовувати API доступ до сервера звітності",
+        "tip": "Звіти (документи) передаються та отримуються через відповідний API достур компоненти Звітність",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
       }
     },
@@ -220,22 +227,31 @@
         "tip": "Найменування провайдера кріптографічних функцій"
       },
       "dfsProvider": {
-        "left": "170",
+        "left": "210",
         "top": "216",
-        "width": "306",
+        "width": "276",
         "height": "20",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
         "style": "ES_LEFT+ES_AUTOHSCROLL",
         "tip": "Провайдер звітності ДПС"
       },
       "dssProvider": {
-        "left": "170",
+        "left": "210",
         "top": "246",
-        "width": "306",
+        "width": "276",
         "height": "20",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
         "style": "ES_LEFT+ES_AUTOHSCROLL",
         "tip": "Провайдер звітності ДСС"
+      },
+      "dfsApiProvider": {
+        "left": "210",
+        "top": "276",
+        "width": "276",
+        "height": "20",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKSIZE+GUI_DOCKTOP+GUI_DOCKHEIGHT",
+        "style": "ES_LEFT+ES_AUTOHSCROLL",
+        "tip": "Провайдер звітності ДПС по API"
       },
       "proxyProvider": {
         "left": "186",
@@ -565,6 +581,13 @@
         "tip": "Параметри налаштування передачі звітності до ДСС",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
       },
+      "dfsApiProvider": {
+        "left": "30",
+        "top": "280",
+        "text": "Провайдер звітності ДПС по API",
+        "tip": "Параметри налаштування передачі звітності по API до ДПС",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE"
+      },
       "proxyProvider": {
         "left": "20",
         "top": "50",
@@ -694,6 +717,15 @@
         "text": "...",
         "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
         "tip": "Вибрати налаштування провайдера звітності ДСС з довідника"
+      },
+      "selectdfsapiprovider": {
+        "left": "475",
+        "top": "275",
+        "width": "25",
+        "height": "22",
+        "text": "...",
+        "onresize": "GUI_DOCKLEFT+GUI_DOCKTOP+GUI_DOCKSIZE",
+        "tip": "Вибрати налаштування провайдера звітності ДПС по API з довідника"
       },
       "selectproxy": {
         "left": "477",
